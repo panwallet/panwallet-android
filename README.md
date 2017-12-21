@@ -2,7 +2,7 @@
 ----------------------------------
 
 [![download](/images/icon-google-play.png)]
-[(https://play.google.com/store/apps/details?id=com.breadwallet)]: #
+[comment]: <> (https://play.google.com/store/apps/details?id=com.breadwallet)
 
 ###monacoin done right
 
