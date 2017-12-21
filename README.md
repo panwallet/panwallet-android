@@ -1,8 +1,7 @@
 ![ƀ](/images/icon.png) Pan Wallet for Android
 ----------------------------------
 
-[![download](/images/icon-google-play.png)]
-[//]: # (https://play.google.com/store/apps/details?id=com.breadwallet)
+[![download](/images/icon-google-play.png)] (https://play.google.com)
 
 ###monacoin done right
 
