@@ -75,6 +75,19 @@ public class BRApiManager {
         handler = new Handler();
     }
 
+    private static String[] codes = { "USD", "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK",
+            "DKK", "EUR", "GBP", "HKD", "HUF", "IDR", "ILS", "INR", "JPY", "KRW",
+            "MXN", "MYR", "NOK", "NZD", "PHP", "PKR", "PLN", "RUB", "SEK", "SGD",
+            "THB", "TRY", "TWD", "ZAR" };
+
+    private static String[] names = { "US Dollar", "Australian Dollar", "Brazilian Real",
+            "Canadian Dollar", "Swiss Franc", "Chilean Peso", "Chinese Yuan", "Czech Koruna",
+            "Danish Krone", "Eurozone Euro", "Pound Sterling", "Hong Kong Dollar", "Hungarian Forint",
+            "Indonesian Rupiah", "Israeli Shekel", "Indian Rupee", "Japanese Yen", "South Korean Won",
+            "Mexican Peso", "Malaysian Ringgit", "Norwegian Krone", "New Zealand Dollar",
+            "Philippine Peso", "Pakistani Rupee", "Polish Zloty", "Russian Ruble", "Swedish Krona",
+            "Singapore Dollar", "Thai Baht", "Turkish Lira", "New Taiwan Dollar", "South African Rand" };
+
     public static BRApiManager getInstance() {
 
         if (instance == null) {
@@ -169,18 +182,48 @@ public class BRApiManager {
 
 
     public static JSONArray fetchRates(Activity activity) {
-        String jsonString = urlGET(activity, String.format("https://%s/rates", BreadApp.HOST));
+        StringBuilder ruse = new StringBuilder();
+        ruse.append("{\"data\":[{\"code\":\"MONA\",\"name\":\"Monacoin\",\"rate\":1},");
+
+        for (int i = 0; codes.length == names.length && i < codes.length; i++) {
+            ruse.append("{\"code\":\"").append(codes[i]).append("\",\"name\":\"")
+                    .append(names[i]).append("\",\"rate\":");
+            String myURL = "https://api.coinmarketcap.com/v1/ticker/monacoin/?convert=" + codes[i];
+            String tempJsonString = urlGET(activity, myURL);
+            if (tempJsonString == null) return null;
+            try {
+                JSONArray tempJsonArray = new JSONArray(tempJsonString);
+                JSONObject tempJsonObject = tempJsonArray.getJSONObject(0);
+
+                String from_code = "price_" + codes[i].toLowerCase();
+                String rate = tempJsonObject.getString(from_code);
+
+                ruse.append(Double.parseDouble(rate));
+                if (i + 1 == codes.length)
+                    ruse.append("}]}");
+                else
+                    ruse.append("},");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        String jsonString = ruse.toString();
+
         JSONArray jsonArray = null;
         if (jsonString == null) return null;
         try {
             JSONObject obj = new JSONObject(jsonString);
-            jsonArray = obj.getJSONArray("body");
 
-        } catch (JSONException ignored) {
+            jsonArray = obj.getJSONArray("data");
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
-        return jsonArray == null ? backupFetchRates(activity) : jsonArray;
+        return jsonArray;
     }
 
+    // There is no backup where we're headed
+    /*
     public static JSONArray backupFetchRates(Activity activity) {
         String jsonString = urlGET(activity, "https://bitpay.com/rates");
 
@@ -195,29 +238,18 @@ public class BRApiManager {
         }
         return jsonArray;
     }
+    */
 
+    // TODO: Develop Monacoin FeePerKb API
     public static void updateFeePerKb(Activity activity) {
-        String jsonString = urlGET(activity, String.format("https://%s/fee-per-kb", BreadApp.HOST));
-        if (jsonString == null || jsonString.isEmpty()) {
-            Log.e(TAG, "updateFeePerKb: failed to update fee, response string: " + jsonString);
-            return;
+        long fee = 400000;
+        long economyFee = 200000;
+        if (fee != 0 && fee < BRConstants.MAX_FEE_PER_KB) {
+            BRSharedPrefs.putFeePerKb(activity, fee);
+            BRWalletManager.getInstance().setFeePerKb(fee, isEconomyFee);
         }
-        long fee;
-        long economyFee;
-        try {
-            JSONObject obj = new JSONObject(jsonString);
-            fee = obj.getLong("fee_per_kb");
-            economyFee = obj.getLong("fee_per_kb_economy");
-            if (fee != 0 && fee < BRConstants.MAX_FEE_PER_KB) {
-                BRSharedPrefs.putFeePerKb(activity, fee);
-                BRWalletManager.getInstance().setFeePerKb(fee, isEconomyFee);
-            }
-            if (economyFee != 0 && economyFee < BRConstants.MAX_FEE_PER_KB) {
-                BRSharedPrefs.putEconomyFeePerKb(activity, economyFee);
-            }
-        } catch (JSONException e) {
-            BRReportsManager.reportBug(e);
-            e.printStackTrace();
+        if (economyFee != 0 && economyFee < BRConstants.MAX_FEE_PER_KB) {
+            BRSharedPrefs.putEconomyFeePerKb(activity, economyFee);
         }
     }
 

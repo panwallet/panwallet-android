@@ -71,7 +71,7 @@ public class BRConstants {
     public static final String FEE_KB_PREFS = "feeKb";
     public static final String ECONOMY_FEE_KB_PREFS = "EconomyFeeKb";
     public static final String LITTLE_CIRCLE = "\u2022";
-    public static String SUPPORT_EMAIL = "support@breadwallet.com";
+    public static String SUPPORT_EMAIL = "support@panwalletapp.com";
 
     public static final int ONE_BITCOIN = 100000000;
     public static final int HUNDRED_BITS = 10000000;
@@ -81,7 +81,7 @@ public class BRConstants {
      */
     public static final long TX_FEE_PER_KB = 5000;
     public static final long DEFAULT_FEE_PER_KB = (TX_FEE_PER_KB * 1000 + 190) / 191;
-    public static final long MAX_FEE_PER_KB = (100100 * 1000 + 190) / 191;
+    public static final long MAX_FEE_PER_KB = (370000 * 1000 + 190) / 191;
 
     /**
      * BRSharedPrefs
@@ -109,8 +109,8 @@ public class BRConstants {
     public static final int CURRENT_UNIT_MBITS = 1;
     public static final int CURRENT_UNIT_BITCOINS = 2;
 
-    public static final String bitcoinLowercase = "\u0180";
-    public static final String bitcoinUppercase = "\u0243";
+    // public static final String bitcoinLowercase = "\u0180";
+    public static final String bitcoinUppercase = "MONA";
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 
