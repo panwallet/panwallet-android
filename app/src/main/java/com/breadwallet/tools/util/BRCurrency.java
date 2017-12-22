@@ -42,33 +42,34 @@ public class BRCurrency {
     public static final String TAG = BRCurrency.class.getName();
 
 
-    // amount is in currency or BTC (bits, mBTC or BTC)
+    // amount is in currency or MONA (mMONA or MONA)
     public static String getFormattedCurrencyString(Context app, String isoCurrencyCode, BigDecimal amount) {
 //        Log.e(TAG, "amount: " + amount);
         DecimalFormat currencyFormat;
 
-        // This formats currency values as the user expects to read them (default locale).
-        currencyFormat = (DecimalFormat) DecimalFormat.getCurrencyInstance(Locale.getDefault());
-        // This specifies the actual currency that the value is in, and provide
-        // s the currency symbol.
+        // This specifies the actual currency that the value is in, and provides
+        // the currency symbol.
         DecimalFormatSymbols decimalFormatSymbols;
         Currency currency;
         String symbol = null;
-        decimalFormatSymbols = currencyFormat.getDecimalFormatSymbols();
 //        int decimalPoints = 0;
-        if (Objects.equals(isoCurrencyCode, "BTC")) {
+        if (Objects.equals(isoCurrencyCode, "MONA")) {
+            // This formats currency values for ##,###.## MONA
+            currencyFormat = (DecimalFormat) DecimalFormat.getCurrencyInstance(new Locale("ar","DZ"));
+            decimalFormatSymbols = currencyFormat.getDecimalFormatSymbols();
             symbol = BRExchange.getBitcoinSymbol(app);
         } else {
+            // This formats currency values as the user expects to read them (default locale).
+            currencyFormat = (DecimalFormat) DecimalFormat.getCurrencyInstance(Locale.getDefault());
+            decimalFormatSymbols = currencyFormat.getDecimalFormatSymbols();
             try {
                 currency = Currency.getInstance(isoCurrencyCode);
             } catch (IllegalArgumentException e) {
                 currency = Currency.getInstance(Locale.getDefault());
             }
             symbol = currency.getSymbol();
-//            decimalPoints = currency.getDefaultFractionDigits();
         }
         decimalFormatSymbols.setCurrencySymbol(symbol);
-//        currencyFormat.setMaximumFractionDigits(decimalPoints);
         currencyFormat.setGroupingUsed(true);
         currencyFormat.setMaximumFractionDigits(BRSharedPrefs.getCurrencyUnit(app) == BRConstants.CURRENT_UNIT_BITCOINS ? 8 : 2);
         currencyFormat.setDecimalFormatSymbols(decimalFormatSymbols);
@@ -79,18 +80,18 @@ public class BRCurrency {
 
     public static String getSymbolByIso(Context app, String iso) {
         String symbol;
-        if (Objects.equals(iso, "BTC")) {
-            String currencySymbolString = BRConstants.bitcoinLowercase;
+        if (Objects.equals(iso, "MONA")) {
+            String currencySymbolString = BRConstants.bitcoinUppercase;
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
-                    case CURRENT_UNIT_BITS:
-                        currencySymbolString = BRConstants.bitcoinLowercase;
-                        break;
                     case BRConstants.CURRENT_UNIT_MBITS:
                         currencySymbolString = "m" + BRConstants.bitcoinUppercase;
                         break;
                     case BRConstants.CURRENT_UNIT_BITCOINS:
+                        currencySymbolString = BRConstants.bitcoinUppercase;
+                        break;
+                    default:
                         currencySymbolString = BRConstants.bitcoinUppercase;
                         break;
                 }
@@ -108,18 +109,18 @@ public class BRCurrency {
         return Utils.isNullOrEmpty(symbol) ? iso : symbol;
     }
 
-    //for now only use for BTC and Bits
+    //for now only use for MONA and Bits
     public static String getCurrencyName(Context app, String iso) {
-        if (Objects.equals(iso, "BTC")) {
+        if (Objects.equals(iso, "MONA")) {
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
-                    case CURRENT_UNIT_BITS:
-                        return "Bits";
                     case BRConstants.CURRENT_UNIT_MBITS:
                         return "MBits";
                     case BRConstants.CURRENT_UNIT_BITCOINS:
-                        return "BTC";
+                        return "MONA";
+                    default:
+                        return "MONA";
                 }
             }
         }
@@ -129,7 +130,7 @@ public class BRCurrency {
     public static int getMaxDecimalPlaces(String iso) {
         if (Utils.isNullOrEmpty(iso)) return 8;
 
-        if (iso.equalsIgnoreCase("BTC")) {
+        if (iso.equalsIgnoreCase("MONA")) {
             return 8;
         } else {
             Currency currency = Currency.getInstance(iso);

@@ -9,7 +9,6 @@ import com.breadwallet.wallet.BRWalletManager;
 
 import java.math.BigDecimal;
 
-import static com.breadwallet.tools.util.BRConstants.CURRENT_UNIT_BITS;
 import static com.breadwallet.tools.util.BRConstants.ROUNDING_MODE;
 
 /**
@@ -54,13 +53,13 @@ public class BRExchange {
         BigDecimal result = new BigDecimal(0);
         int unit = BRSharedPrefs.getCurrencyUnit(app);
         switch (unit) {
-            case CURRENT_UNIT_BITS:
-                result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100"), 2, ROUNDING_MODE);
-                break;
             case BRConstants.CURRENT_UNIT_MBITS:
                 result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100000"), 5, ROUNDING_MODE);
                 break;
             case BRConstants.CURRENT_UNIT_BITCOINS:
+                result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100000000"), 8, ROUNDING_MODE);
+                break;
+            default:
                 result = new BigDecimal(String.valueOf(amount)).divide(new BigDecimal("100000000"), 8, ROUNDING_MODE);
                 break;
         }
@@ -71,13 +70,13 @@ public class BRExchange {
         BigDecimal result = new BigDecimal(0);
         int unit = BRSharedPrefs.getCurrencyUnit(app);
         switch (unit) {
-            case CURRENT_UNIT_BITS:
-                result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100"));
-                break;
             case BRConstants.CURRENT_UNIT_MBITS:
                 result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100000"));
                 break;
             case BRConstants.CURRENT_UNIT_BITCOINS:
+                result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100000000"));
+                break;
+            default:
                 result = new BigDecimal(String.valueOf(amount)).multiply(new BigDecimal("100000000"));
                 break;
         }
@@ -85,20 +84,17 @@ public class BRExchange {
     }
 
     public static String getBitcoinSymbol(Context app) {
-        String currencySymbolString = BRConstants.bitcoinLowercase;
+        String currencySymbolString = BRConstants.bitcoinUppercase;
         if (app != null) {
             int unit = BRSharedPrefs.getCurrencyUnit(app);
             switch (unit) {
-                case CURRENT_UNIT_BITS:
-                    currencySymbolString = BRConstants.bitcoinLowercase;
-//                        decimalPoints = 2;
-//                    if (getNumberOfDecimalPlaces(result.toPlainString()) == 1)
-//                        currencyFormat.setMinimumFractionDigits(1);
-                    break;
                 case BRConstants.CURRENT_UNIT_MBITS:
                     currencySymbolString = "m" + BRConstants.bitcoinUppercase;
                     break;
                 case BRConstants.CURRENT_UNIT_BITCOINS:
+                    currencySymbolString = BRConstants.bitcoinUppercase;
+                    break;
+                default:
                     currencySymbolString = BRConstants.bitcoinUppercase;
                     break;
             }

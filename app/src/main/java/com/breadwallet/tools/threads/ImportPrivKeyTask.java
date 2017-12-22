@@ -59,7 +59,8 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
 
     public ImportPrivKeyTask(Activity activity) {
         app = activity;
-        UNSPENT_URL = BuildConfig.BITCOIN_TESTNET ? "https://test-insight.bitpay.com/api/addrs/" : String.format("https://%s/q/addr/", BreadApp.HOST);
+        // NO TESTNET UXTO API AVAILABLE
+        UNSPENT_URL = "https://mona.chainsight.info/api/addrs/";
     }
 
     @Override
@@ -95,10 +96,10 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
 
 //        String iso = BRSharedPrefs.getIso(app);
 
-        String sentBits = BRCurrency.getFormattedCurrencyString(app, "BTC", BRExchange.getAmountFromSatoshis(app, "BTC", new BigDecimal(importPrivKeyEntity.getAmount())));
+        String sentBits = BRCurrency.getFormattedCurrencyString(app, "MONA", BRExchange.getAmountFromSatoshis(app, "MONA", new BigDecimal(importPrivKeyEntity.getAmount())));
 //        String sentExchange = BRCurrency.getFormattedCurrencyString(app, iso, BRExchange.getAmountFromSatoshis(app, iso, new BigDecimal(importPrivKeyEntity.getAmount())));
 
-        String feeBits = BRCurrency.getFormattedCurrencyString(app, "BTC", BRExchange.getAmountFromSatoshis(app, "BTC", new BigDecimal(importPrivKeyEntity.getFee())));
+        String feeBits = BRCurrency.getFormattedCurrencyString(app, "MONA", BRExchange.getAmountFromSatoshis(app, "MONA", new BigDecimal(importPrivKeyEntity.getFee())));
 //        String feeExchange = BRCurrency.getFormattedCurrencyString(app, iso, BRExchange.getAmountFromSatoshis(app, iso, new BigDecimal(importPrivKeyEntity.getFee())));
 
         if (app == null || importPrivKeyEntity == null) return;
@@ -158,10 +159,11 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
                 String txid = obj.getString("txid");
                 int vout = obj.getInt("vout");
                 String scriptPubKey = obj.getString("scriptPubKey");
-                long amount = obj.getLong("satoshis");
+                double amount = obj.getDouble("amount");
+                long sats = Math.round(amount * 100000000);
                 byte[] txidBytes = hexStringToByteArray(txid);
                 byte[] scriptPubKeyBytes = hexStringToByteArray(scriptPubKey);
-                BRWalletManager.getInstance().addInputToPrivKeyTx(txidBytes, vout, scriptPubKeyBytes, amount);
+                BRWalletManager.getInstance().addInputToPrivKeyTx(txidBytes, vout, scriptPubKeyBytes, sats);
             }
 
             result = BRWalletManager.getInstance().getPrivKeyObject();
