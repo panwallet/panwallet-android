@@ -121,7 +121,7 @@ public class FingerprintActivity extends BRActivity {
         String iso = BRSharedPrefs.getIso(this);
         //amount in satoshis
         BigDecimal satoshis = new BigDecimal(BRKeyStore.getSpendLimit(this));
-        //amount in BTC, mBTC or bits
+        //amount in BTC or bits
         BigDecimal amount = BRExchange.getAmountFromSatoshis(this, "MONA", satoshis);
         //amount in user preferred ISO (e.g. USD)
         BigDecimal curAmount = BRExchange.getAmountFromSatoshis(this, iso, satoshis);

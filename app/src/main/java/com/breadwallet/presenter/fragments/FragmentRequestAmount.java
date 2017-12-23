@@ -156,6 +156,7 @@ public class FragmentRequestAmount extends Fragment {
         signalLayout.removeView(request);
 
         showCurrencyList(false);
+        // Change ISO to MONA
         selectedIso = BRSharedPrefs.getPreferredBTC(getContext()) ? "MONA" : BRSharedPrefs.getIso(getContext());
 
         signalLayout.setOnClickListener(new View.OnClickListener() {
