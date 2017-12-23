@@ -52,10 +52,11 @@ public class BRCurrency {
         DecimalFormatSymbols decimalFormatSymbols;
         Currency currency;
         String symbol = null;
-//        int decimalPoints = 0;
+
         if (Objects.equals(isoCurrencyCode, "MONA")) {
-            // This formats currency values for ##,###.## MONA
-            currencyFormat = (DecimalFormat) DecimalFormat.getCurrencyInstance(new Locale("ar","DZ"));
+            // This formats currency values for # MONA
+            currencyFormat = new DecimalFormat("#¤");
+            currencyFormat.setMinimumFractionDigits(0);
             decimalFormatSymbols = currencyFormat.getDecimalFormatSymbols();
             symbol = BRExchange.getBitcoinSymbol(app);
         } else {
@@ -69,6 +70,7 @@ public class BRCurrency {
             }
             symbol = currency.getSymbol();
         }
+
         decimalFormatSymbols.setCurrencySymbol(symbol);
         currencyFormat.setGroupingUsed(true);
         currencyFormat.setMaximumFractionDigits(BRSharedPrefs.getCurrencyUnit(app) == BRConstants.CURRENT_UNIT_BITCOINS ? 8 : 2);
@@ -85,8 +87,8 @@ public class BRCurrency {
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
-                    case BRConstants.CURRENT_UNIT_MBITS:
-                        currencySymbolString = "m" + BRConstants.bitcoinUppercase;
+                    case BRConstants.CURRENT_UNIT_BITS:
+                        currencySymbolString = BRConstants.bitcoinMicro;
                         break;
                     case BRConstants.CURRENT_UNIT_BITCOINS:
                         currencySymbolString = BRConstants.bitcoinUppercase;
@@ -115,8 +117,8 @@ public class BRCurrency {
             if (app != null) {
                 int unit = BRSharedPrefs.getCurrencyUnit(app);
                 switch (unit) {
-                    case BRConstants.CURRENT_UNIT_MBITS:
-                        return "MBits";
+                    case BRConstants.CURRENT_UNIT_BITS:
+                        return "Bits";
                     case BRConstants.CURRENT_UNIT_BITCOINS:
                         return "MONA";
                     default:

@@ -75,12 +75,12 @@ public class BRApiManager {
         handler = new Handler();
     }
 
-    private static String[] codes = { "USD", "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK",
+    private static String[] codes = { "BTC", "USD", "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK",
             "DKK", "EUR", "GBP", "HKD", "HUF", "IDR", "ILS", "INR", "JPY", "KRW",
             "MXN", "MYR", "NOK", "NZD", "PHP", "PKR", "PLN", "RUB", "SEK", "SGD",
             "THB", "TRY", "TWD", "ZAR" };
 
-    private static String[] names = { "US Dollar", "Australian Dollar", "Brazilian Real",
+    private static String[] names = { "Bitcoin", "US Dollar", "Australian Dollar", "Brazilian Real",
             "Canadian Dollar", "Swiss Franc", "Chilean Peso", "Chinese Yuan", "Czech Koruna",
             "Danish Krone", "Eurozone Euro", "Pound Sterling", "Hong Kong Dollar", "Hungarian Forint",
             "Indonesian Rupiah", "Israeli Shekel", "Indian Rupee", "Japanese Yen", "South Korean Won",
