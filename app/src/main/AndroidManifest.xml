@@ -206,11 +206,6 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.WithdrawBchActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
             android:name=".presenter.activities.settings.NodesActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
