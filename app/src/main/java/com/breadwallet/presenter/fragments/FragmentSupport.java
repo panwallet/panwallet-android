@@ -105,11 +105,12 @@ public class FragmentSupport extends Fragment {
             }
         });
 
-        theUrl = URL_SUPPORT;
-        HTTPServer.mode = HTTPServer.ServerMode.SUPPORT;
+        // URL_SUPPORT
+        theUrl = "https://www.panwallet.com/support";
+        /*HTTPServer.mode = HTTPServer.ServerMode.SUPPORT;
         String articleId = getArguments() == null ? null : getArguments().getString("articleId");
         if (Utils.isNullOrEmpty(theUrl)) throw new IllegalArgumentException("No url extra!");
-
+        */
         WebSettings webSettings = webView.getSettings();
 
         if (0 != (getActivity().getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE)) {
@@ -118,10 +119,10 @@ public class FragmentSupport extends Fragment {
         webSettings.setDomStorageEnabled(true);
         webSettings.setJavaScriptEnabled(true);
 
-        if (articleId != null && !articleId.isEmpty())
-            theUrl = theUrl + "/article?slug=" + articleId;
+        /*if (articleId != null && !articleId.isEmpty())
+            theUrl = theUrl + "/article?slug=" + articleId;*/
 
-        Log.d(TAG, "onCreate: theUrl: " + theUrl + ", articleId: " + articleId);
+        // Log.d(TAG, "onCreate: theUrl: " + theUrl + ", articleId: " + articleId);
         webView.loadUrl(theUrl);
 
         return rootView;
