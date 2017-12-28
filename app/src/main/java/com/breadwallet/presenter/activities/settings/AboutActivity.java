@@ -1,9 +1,7 @@
 package com.breadwallet.presenter.activities.settings;
 
-import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,6 +24,8 @@ public class AboutActivity extends BRActivity {
     private ImageView twitterShare;
     private ImageView blogShare;
     private static AboutActivity app;
+
+    private String onCloseUrl;
 
     public static AboutActivity getApp() {
         return app;
@@ -60,47 +60,40 @@ public class AboutActivity extends BRActivity {
         twitterShare = (ImageView) findViewById(R.id.twitter_share_button);
         blogShare = (ImageView) findViewById(R.id.blog_share_button);
 
+
         redditShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reddit.com/r/breadwallet/"));
-                startActivity(browserIntent);
-                app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
+                //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.reddit.com/user/panwallet"));
+                //startActivity(browserIntent);
+                if (!BRAnimator.isClickAllowed()) return;
+                BRAnimator.showSupportFragment(app, "https://www.reddit.com/user/panwallet");
+                // webView.loadUrl("https://www.reddit.com/user/panwallet");
+                // app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
             }
         });
 
         twitterShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/breadapp"));
-                startActivity(browserIntent);
-                app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
+                if (!BRAnimator.isClickAllowed()) return;
+                BRAnimator.showSupportFragment(app, "https://twitter.com/panwalletapp");
             }
         });
         blogShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://breadapp.com/blog/"));
-                startActivity(browserIntent);
-                app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
+                if (!BRAnimator.isClickAllowed()) return;
+                BRAnimator.showSupportFragment(app, "https://www.panwallet.com");
             }
         });
         policyText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://breadapp.com/privacy-policy"));
-                startActivity(browserIntent);
-                app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
+                if (!BRAnimator.isClickAllowed()) return;
+                BRAnimator.showSupportFragment(app, "https://www.panwallet.com/privacy");
             }
         });
-//        termsText.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://breadapp.com/privacy-policy"));
-//                startActivity(browserIntent);
-//                app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
-//            }
-//        });
 
     }
 

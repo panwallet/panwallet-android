@@ -95,7 +95,7 @@ public class FragmentMenu extends Fragment {
         close = (ImageButton) rootView.findViewById(R.id.close_button);
 
         itemList = new ArrayList<>();
-        boolean buyBitcoinEnabled = APIClient.getInstance(getActivity()).isFeatureEnabled(APIClient.FeatureFlags.BUY_BITCOIN.toString());
+        boolean buyBitcoinEnabled = false; // APIClient.getInstance(getActivity()).isFeatureEnabled(APIClient.FeatureFlags.BUY_BITCOIN.toString());
         if (buyBitcoinEnabled)
             itemList.add(new BRMenuItem(getString(R.string.MenuButton_buy), R.drawable.buy_bitcoin, new View.OnClickListener() {
                 @Override
@@ -120,7 +120,7 @@ public class FragmentMenu extends Fragment {
         itemList.add(new BRMenuItem(getString(R.string.MenuButton_support), R.drawable.ic_question_mark, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BRAnimator.showSupportFragment(getActivity(), null);
+                BRAnimator.showSupportFragment(getActivity(), "https://www.panwallet.com/support");
             }
         }));
         itemList.add(new BRMenuItem(getString(R.string.MenuButton_settings), R.drawable.ic_settings, new View.OnClickListener() {
