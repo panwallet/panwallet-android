@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.breadwallet">
+          package="com.panwallet">
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -38,7 +38,7 @@
         android:required="false"/>
 
     <application
-        android:name=".BreadApp"
+        android:name="com.panwallet.PanApp"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
@@ -51,7 +51,7 @@
         >
 
         <activity
-            android:name=".presenter.activities.intro.IntroActivity"
+            android:name="com.panwallet.presenter.activities.intro.IntroActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
@@ -62,7 +62,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presenter.activities.BreadActivity"
+            android:name="com.panwallet.presenter.activities.PanActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
@@ -86,143 +86,143 @@
                 android:resource="@xml/searchable"/>
         </activity>
         <activity
-            android:name=".presenter.activities.SetPinActivity"
+            android:name="com.panwallet.presenter.activities.SetPinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.intro.RecoverActivity"
+            android:name="com.panwallet.presenter.activities.intro.RecoverActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.WipeActivity"
+            android:name="com.panwallet.presenter.activities.settings.WipeActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.ImportActivity"
+            android:name="com.panwallet.presenter.activities.settings.ImportActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.ReEnterPinActivity"
+            android:name="com.panwallet.presenter.activities.ReEnterPinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.UpdatePinActivity"
+            android:name="com.panwallet.presenter.activities.UpdatePinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.LoginActivity"
+            android:name="com.panwallet.presenter.activities.LoginActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SettingsActivity"
+            android:name="com.panwallet.presenter.activities.settings.SettingsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.NotificationActivity"
+            android:name="com.panwallet.presenter.activities.settings.NotificationActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SyncBlockchainActivity"
+            android:name="com.panwallet.presenter.activities.settings.SyncBlockchainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.DisplayCurrencyActivity"
+            android:name="com.panwallet.presenter.activities.settings.DisplayCurrencyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.AboutActivity"
+            android:name="com.panwallet.presenter.activities.settings.AboutActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SecurityCenterActivity"
+            android:name="com.panwallet.presenter.activities.settings.SecurityCenterActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.ShareDataActivity"
+            android:name="com.panwallet.presenter.activities.settings.ShareDataActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.intro.WriteDownActivity"
+            android:name="com.panwallet.presenter.activities.intro.WriteDownActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.PaperKeyActivity"
+            android:name="com.panwallet.presenter.activities.PaperKeyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.SpendLimitActivity"
+            android:name="com.panwallet.presenter.activities.settings.SpendLimitActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.PaperKeyProveActivity"
+            android:name="com.panwallet.presenter.activities.PaperKeyProveActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.InputWordsActivity"
+            android:name="com.panwallet.presenter.activities.InputWordsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.camera.ScanQRActivity"
+            android:name="com.panwallet.presenter.activities.camera.ScanQRActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.WebViewActivity"
+            android:name="com.panwallet.presenter.activities.settings.WebViewActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.DisabledActivity"
+            android:name="com.panwallet.presenter.activities.DisabledActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.FingerprintActivity"
+            android:name="com.panwallet.presenter.activities.settings.FingerprintActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.AdvancedActivity"
+            android:name="com.panwallet.presenter.activities.settings.AdvancedActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.NodesActivity"
+            android:name="com.panwallet.presenter.activities.settings.NodesActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.camera.CameraActivity"
+            android:name="com.panwallet.presenter.activities.camera.CameraActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".presenter.activities.settings.TestActivity"
+            android:name="com.panwallet.presenter.activities.settings.TestActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
 
         <service
-            android:name=".tools.listeners.SyncReceiver"
+            android:name="com.panwallet.tools.listeners.SyncReceiver"
             android:enabled="true"
             android:exported="false"
             android:label="SyncReceiver"/>

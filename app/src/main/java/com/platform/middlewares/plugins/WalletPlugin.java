@@ -3,13 +3,13 @@ package com.platform.middlewares.plugins;
 import android.app.Activity;
 import android.util.Log;
 
-import com.breadwallet.BreadApp;
-import com.breadwallet.tools.manager.BREventManager;
-import com.breadwallet.tools.manager.BRSharedPrefs;
-import com.breadwallet.tools.threads.BRExecutor;
-import com.breadwallet.tools.util.BRConstants;
-import com.breadwallet.tools.util.Utils;
-import com.breadwallet.wallet.BRWalletManager;
+import com.panwallet.PanApp;
+import com.panwallet.tools.manager.BREventManager;
+import com.panwallet.tools.manager.BRSharedPrefs;
+import com.panwallet.tools.threads.BRExecutor;
+import com.panwallet.tools.util.BRConstants;
+import com.panwallet.tools.util.Utils;
+import com.panwallet.wallet.BRWalletManager;
 import com.platform.BRHTTPHelper;
 import com.platform.interfaces.Plugin;
 import com.platform.tools.BRBitId;
@@ -63,7 +63,7 @@ public class WalletPlugin implements Plugin {
     @Override
     public boolean handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response) {
         if (!target.startsWith("/_wallet")) return false;
-        Activity app = (Activity) BreadApp.getBreadContext();
+        Activity app = (Activity) PanApp.getBreadContext();
 
         if (target.startsWith("/_wallet/info") && request.getMethod().equalsIgnoreCase("get")) {
             Log.i(TAG, "handling: " + target + " " + baseRequest.getMethod());

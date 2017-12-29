@@ -7,9 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/extra_light_blue_background"
-    tools:context="com.breadwallet.presenter.activities.SetPinActivity">
+    tools:context="com.panwallet.presenter.activities.SetPinActivity">
 
-    <com.breadwallet.presenter.customviews.BRText
+    <com.panwallet.presenter.customviews.BRText
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.breadwallet.presenter.customviews.BRText
+    <com.panwallet.presenter.customviews.BRText
         android:id="@+id/description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"/>
 
-    <com.breadwallet.presenter.customviews.BRText
+    <com.panwallet.presenter.customviews.BRText
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/description"/>
 
 
-    <com.breadwallet.presenter.customviews.BRButton
+    <com.panwallet.presenter.customviews.BRButton
         android:id="@+id/send_button"
         android:layout_width="0dp"
         android:layout_height="@dimen/big_button_height"
@@ -112,7 +112,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -129,7 +129,7 @@
                     app:customEFont="CircularPro-Medium.otf"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -148,7 +148,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -163,7 +163,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -182,7 +182,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -197,7 +197,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -224,7 +224,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -239,7 +239,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -258,7 +258,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -273,7 +273,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -292,7 +292,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -307,7 +307,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -334,7 +334,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -349,7 +349,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -368,7 +368,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -383,7 +383,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -402,7 +402,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -417,7 +417,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -446,7 +446,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -461,7 +461,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -481,7 +481,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word11"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -496,7 +496,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -516,7 +516,7 @@
 
                 >
 
-                <com.breadwallet.presenter.customviews.BREdit
+                <com.panwallet.presenter.customviews.BREdit
                     android:id="@+id/word12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -530,7 +530,7 @@
                     android:textColorHint="@color/extra_light_gray"
                     />
 
-                <com.breadwallet.presenter.customviews.BRText
+                <com.panwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"

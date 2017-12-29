@@ -3,10 +3,10 @@ package com.platform.tools;
 import android.content.Context;
 import android.util.Log;
 
-import com.breadwallet.tools.crypto.CryptoHelper;
-import com.breadwallet.tools.manager.BRReportsManager;
-import com.breadwallet.tools.util.BRCompressor;
-import com.breadwallet.tools.util.Utils;
+import com.panwallet.tools.crypto.CryptoHelper;
+import com.panwallet.tools.manager.BRReportsManager;
+import com.panwallet.tools.util.BRCompressor;
+import com.panwallet.tools.util.Utils;
 import com.platform.APIClient;
 import com.platform.entities.TxMetaData;
 import com.platform.entities.WalletInfo;
@@ -19,7 +19,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
