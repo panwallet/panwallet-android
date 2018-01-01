@@ -241,7 +241,10 @@ public class FragmentSend extends Fragment {
                     feeText.setVisibility(View.VISIBLE);
                     edit.setVisibility(View.VISIBLE);
                     isoText.setTextColor(getContext().getColor(R.color.almost_black));
-                    isoText.setText(BRCurrency.getSymbolByIso(getActivity(), selectedIso));
+                    if (selectedIso.equals("MONA"))
+                        isoText.setText("MONA");
+                    else
+                        isoText.setText(BRCurrency.getSymbolByIso(getActivity(), selectedIso));
                     isoText.setTextSize(28);
                     final float scaleX = amountEdit.getScaleX();
                     amountEdit.setScaleX(0);
@@ -662,7 +665,10 @@ public class FragmentSend extends Fragment {
         String iso = selectedIso;
         curBalance = BRWalletManager.getInstance().getBalance(getActivity());
         if (!amountLabelOn)
-            isoText.setText(BRCurrency.getSymbolByIso(getActivity(), selectedIso));
+            if (selectedIso.equals("MONA"))
+                isoText.setText("MONA");
+            else
+                isoText.setText(BRCurrency.getSymbolByIso(getActivity(), selectedIso));
         isoButton.setText(String.format("%s(%s)", BRCurrency.getCurrencyName(getActivity(), selectedIso), BRCurrency.getSymbolByIso(getActivity(), selectedIso)));
         //Balance depending on ISO
         long satoshis = (Utils.isNullOrEmpty(tmpAmount) || tmpAmount.equalsIgnoreCase(".")) ? 0 :

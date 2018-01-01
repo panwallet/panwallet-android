@@ -130,8 +130,8 @@ public class MerkleBlockDataSource implements BRDataSourceInterface {
             // make sure to close the cursor
 
         } finally {
-            closeDatabase();
             if (cursor != null) cursor.close();
+            closeDatabase();
         }
         return merkleBlocks;
     }

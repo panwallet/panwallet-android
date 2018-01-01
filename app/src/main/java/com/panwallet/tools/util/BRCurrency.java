@@ -53,7 +53,7 @@ public class BRCurrency {
 
         if (Objects.equals(isoCurrencyCode, "MONA")) {
             // This formats currency values for # MONA
-            currencyFormat = new DecimalFormat("#¤");
+            currencyFormat = new DecimalFormat("0¤");
             currencyFormat.setMinimumFractionDigits(0);
             decimalFormatSymbols = currencyFormat.getDecimalFormatSymbols();
             symbol = BRExchange.getBitcoinSymbol(app);

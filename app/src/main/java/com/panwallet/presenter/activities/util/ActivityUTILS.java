@@ -11,10 +11,16 @@ import android.view.WindowManager;
 import com.panwallet.R;
 import com.panwallet.presenter.activities.DisabledActivity;
 import com.panwallet.presenter.activities.InputWordsActivity;
+import com.panwallet.presenter.activities.LoginActivity;
+import com.panwallet.presenter.activities.PanActivity;
 import com.panwallet.presenter.activities.SetPinActivity;
 import com.panwallet.presenter.activities.intro.IntroActivity;
 import com.panwallet.presenter.activities.intro.RecoverActivity;
 import com.panwallet.presenter.activities.intro.WriteDownActivity;
+import com.panwallet.presenter.activities.settings.DisplayCurrencyActivity;
+import com.panwallet.presenter.activities.settings.SecurityCenterActivity;
+import com.panwallet.presenter.activities.settings.SettingsActivity;
+import com.panwallet.presenter.activities.settings.SpendLimitActivity;
 import com.panwallet.tools.manager.InternetManager;
 import com.panwallet.tools.manager.BRApiManager;
 import com.panwallet.tools.security.AuthManager;
@@ -72,7 +78,7 @@ public class ActivityUTILS {
         //set status bar color
 //        ActivityUTILS.setStatusBarColor(app, android.R.color.transparent);
         InternetManager.getInstance();
-        if (!(app instanceof IntroActivity || app instanceof RecoverActivity || app instanceof WriteDownActivity))
+        if (app instanceof LoginActivity || app instanceof DisplayCurrencyActivity || app instanceof SpendLimitActivity)
             BRApiManager.getInstance().startTimer(app);
         //show wallet locked if it is
         if (!isAppSafe(app))

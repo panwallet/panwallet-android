@@ -74,18 +74,18 @@ public class BRApiManager {
         handler = new Handler();
     }
 
-    private static String[] codes = { "BTC", "USD", "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK",
-            "DKK", "EUR", "GBP", "HKD", "HUF", "IDR", "ILS", "INR", "JPY", "KRW",
-            "MXN", "MYR", "NOK", "NZD", "PHP", "PKR", "PLN", "RUB", "SEK", "SGD",
+    private static String[] codes = { "BTC", "USD", "JPY", "KRW", "EUR", "MXN", "GBP",
+            "AUD", "BRL", "CAD", "CHF", "CLP", "CNY", "CZK", "DKK", "HKD", "HUF", "IDR",
+            "ILS", "INR", "MYR", "NOK", "NZD", "PHP", "PKR", "PLN", "RUB", "SEK", "SGD",
             "THB", "TRY", "TWD", "ZAR" };
 
-    private static String[] names = { "Bitcoin", "US Dollar", "Australian Dollar", "Brazilian Real",
-            "Canadian Dollar", "Swiss Franc", "Chilean Peso", "Chinese Yuan", "Czech Koruna",
-            "Danish Krone", "Eurozone Euro", "Pound Sterling", "Hong Kong Dollar", "Hungarian Forint",
-            "Indonesian Rupiah", "Israeli Shekel", "Indian Rupee", "Japanese Yen", "South Korean Won",
-            "Mexican Peso", "Malaysian Ringgit", "Norwegian Krone", "New Zealand Dollar",
-            "Philippine Peso", "Pakistani Rupee", "Polish Zloty", "Russian Ruble", "Swedish Krona",
-            "Singapore Dollar", "Thai Baht", "Turkish Lira", "New Taiwan Dollar", "South African Rand" };
+    private static String[] names = { "Bitcoin", "US Dollar", "Japanese Yen", "South Korean Won",
+            "Eurozone Euro", "Mexican Peso", "Pound Sterling", "Australian Dollar", "Brazilian Real",
+            "Canadian Dollar", "Swiss Franc", "Chilean Peso", "Chinese Yuan", "Czech Koruna", "Danish Krone",
+            "Hong Kong Dollar", "Hungarian Forint", "Indonesian Rupiah", "Israeli Shekel", "Indian Rupee",
+            "Malaysian Ringgit", "Norwegian Krone", "New Zealand Dollar", "Philippine Peso", "Pakistani Rupee",
+            "Polish Zloty", "Russian Ruble", "Swedish Krona", "Singapore Dollar", "Thai Baht", "Turkish Lira",
+            "New Taiwan Dollar", "South African Rand" };
 
     public static BRApiManager getInstance() {
 

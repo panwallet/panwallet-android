@@ -126,7 +126,7 @@ public class PanActivity extends BRActivity implements BRWalletManager.OnBalance
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bread);
+        setContentView(R.layout.activity_pan);
         BRWalletManager.getInstance().addBalanceChangedListener(this);
         BRPeerManager.getInstance().addStatusUpdateListener(this);
         BRPeerManager.setOnSyncFinished(new BRPeerManager.OnSyncSucceeded() {
@@ -181,7 +181,7 @@ public class PanActivity extends BRActivity implements BRWalletManager.OnBalance
         Uri data = intent.getData();
         if (data == null) return;
         String scheme = data.getScheme();
-        if (scheme != null && (scheme.startsWith("bitcoin") || scheme.startsWith("bitid"))) {
+        if (scheme != null && (scheme.startsWith("monacoin") || scheme.startsWith("bitid"))) {
             String str = intent.getDataString();
             BitcoinUrlHandler.processRequest(this, str);
         }

@@ -21,10 +21,13 @@ import com.panwallet.tools.manager.BRSharedPrefs;
 import com.panwallet.tools.manager.FontManager;
 import com.panwallet.tools.security.AuthManager;
 import com.panwallet.tools.security.BRKeyStore;
+import com.panwallet.tools.util.BRCurrency;
 import com.panwallet.tools.util.BRExchange;
 import com.panwallet.wallet.BRWalletManager;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,6 +39,7 @@ public class SpendLimitActivity extends BRActivity {
     private static final String TAG = SpendLimitActivity.class.getName();
     public static boolean appVisible = false;
     private static SpendLimitActivity app;
+    private static final long[] MONACOIN = { 10000000L, 100000000L, 1000000000L, 10000000000L };
     private ListView listView;
     private LimitAdaptor adapter;
 
@@ -65,12 +69,12 @@ public class SpendLimitActivity extends BRActivity {
         listView = findViewById(R.id.limit_list);
         listView.setFooterDividersEnabled(true);
         adapter = new LimitAdaptor(this);
-        List<Integer> items = new ArrayList<>();
-        items.add(getAmountByStep(0).intValue());
-        items.add(getAmountByStep(1).intValue());
-        items.add(getAmountByStep(2).intValue());
-        items.add(getAmountByStep(3).intValue());
-        items.add(getAmountByStep(4).intValue());
+        List<Long> items = new ArrayList<>();
+        items.add(getAmountByStep(0).longValue());
+        items.add(getAmountByStep(1).longValue());
+        items.add(getAmountByStep(2).longValue());
+        items.add(getAmountByStep(3).longValue());
+        items.add(getAmountByStep(4).longValue());
 
         adapter.addAll(items);
 
@@ -79,7 +83,7 @@ public class SpendLimitActivity extends BRActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Log.e(TAG, "onItemClick: " + position);
-                int limit = adapter.getItem(position);
+                long limit = adapter.getItem(position);
                 BRKeyStore.putSpendLimit(limit, app);
 
                 AuthManager.getInstance().setTotalLimit(app, BRWalletManager.getInstance().getTotalSent()
@@ -101,20 +105,20 @@ public class SpendLimitActivity extends BRActivity {
                 result = new BigDecimal(0);// 0 always require
                 break;
             case 1:
-                result = new BigDecimal(ONE_BITCOIN / 100);//   0.01 BTC
+                result = new BigDecimal(MONACOIN[0]);//   0.1 MONA
                 break;
             case 2:
-                result = new BigDecimal(ONE_BITCOIN / 10);//   0.1 BTC
+                result = new BigDecimal(MONACOIN[1]);//   1 MONA
                 break;
             case 3:
-                result = new BigDecimal(ONE_BITCOIN);//   1 BTC
+                result = new BigDecimal(MONACOIN[2]);//   10 MONA
                 break;
             case 4:
-                result = new BigDecimal(ONE_BITCOIN * 10);//   10 BTC
+                result = new BigDecimal(MONACOIN[3]);//   100 MONA
                 break;
 
             default:
-                result = new BigDecimal(ONE_BITCOIN);//   1 BTC Default
+                result = new BigDecimal(MONACOIN[1]);//   1 MONA Default
                 break;
         }
         return result;
@@ -125,16 +129,16 @@ public class SpendLimitActivity extends BRActivity {
 
             case 0:
                 return 0;
-            case ONE_BITCOIN / 100:
+            case 1:
                 return 1;
-            case ONE_BITCOIN / 10:
+            case 10:
                 return 2;
-            case ONE_BITCOIN:
+            case 100:
                 return 3;
-            case ONE_BITCOIN * 10:
+            case 1000:
                 return 4;
             default:
-                return 2; //1 BTC Default
+                return 2; //1 MONA Default
         }
     }
 
@@ -159,7 +163,7 @@ public class SpendLimitActivity extends BRActivity {
         overridePendingTransition(R.anim.enter_from_left, R.anim.exit_to_right);
     }
 
-    public class LimitAdaptor extends ArrayAdapter<Integer> {
+    public class LimitAdaptor extends ArrayAdapter<Long> {
 
         private final Context mContext;
         private final int layoutResourceId;
@@ -185,14 +189,19 @@ public class SpendLimitActivity extends BRActivity {
             // get the TextView and then set the text (item name) and tag (item ID) values
             textViewItem = convertView.findViewById(R.id.currency_item_text);
             FontManager.overrideFonts(textViewItem);
-            Integer item = getItem(position);
-            BigDecimal curAmount = BRExchange.getAmountFromSatoshis(app, BRSharedPrefs.getIso(app), new BigDecimal(item));
-            BigDecimal btcAmount = BRExchange.getBitcoinForSatoshis(app, new BigDecimal(item));
-            String text = String.format(item == 0 ? app.getString(R.string.TouchIdSpendingLimit) : "%s (%s)", curAmount, btcAmount);
+
+            BigDecimal item = getAmountByStep(position);
+            BigDecimal curRate = BRExchange.getAmountFromSatoshis(app, BRSharedPrefs.getIso(app), item);
+            String curAmount = BRCurrency.getFormattedCurrencyString(app, BRSharedPrefs.getIso(app), curRate);
+
+            item = item.divide(new BigDecimal(MONACOIN[1]));
+            String btcAmount = BRCurrency.getFormattedCurrencyString(app, "MONA", item);
+
+            String text = String.format(item.signum() == 0 ? app.getString(R.string.TouchIdSpendingLimit) : "%s (%s)", curAmount, btcAmount);
             textViewItem.setText(text);
             ImageView checkMark = convertView.findViewById(R.id.currency_checkmark);
 
-            if (position == getStepFromLimit(limit)) {
+            if (position == getStepFromLimit(limit / MONACOIN[0])) {
                 checkMark.setVisibility(View.VISIBLE);
             } else {
                 checkMark.setVisibility(View.GONE);
