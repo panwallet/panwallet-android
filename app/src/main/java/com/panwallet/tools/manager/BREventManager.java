@@ -85,7 +85,7 @@ public class BREventManager implements PanApp.OnAppBackgrounded {
     public void onBackgrounded() {
         Log.e(TAG, "onBackgrounded: ");
         saveEvents();
-        pushToServer();
+        // pushToServer();
     }
 
     private void saveEvents() {

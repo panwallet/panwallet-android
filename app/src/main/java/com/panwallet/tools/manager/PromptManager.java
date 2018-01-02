@@ -9,7 +9,7 @@ import com.panwallet.R;
 import com.panwallet.presenter.activities.UpdatePinActivity;
 import com.panwallet.presenter.activities.intro.WriteDownActivity;
 import com.panwallet.presenter.activities.settings.FingerprintActivity;
-import com.panwallet.presenter.activities.settings.ShareDataActivity;
+// import com.panwallet.presenter.activities.settings.ShareDataActivity;
 import com.panwallet.tools.security.BRKeyStore;
 import com.panwallet.tools.threads.BRExecutor;
 import com.panwallet.tools.util.Utils;
@@ -18,7 +18,7 @@ import com.panwallet.wallet.BRPeerManager;
 import static com.panwallet.tools.manager.PromptManager.PromptItem.FINGER_PRINT;
 import static com.panwallet.tools.manager.PromptManager.PromptItem.PAPER_KEY;
 import static com.panwallet.tools.manager.PromptManager.PromptItem.RECOMMEND_RESCAN;
-import static com.panwallet.tools.manager.PromptManager.PromptItem.SHARE_DATA;
+// import static com.panwallet.tools.manager.PromptManager.PromptItem.SHARE_DATA;
 import static com.panwallet.tools.manager.PromptManager.PromptItem.UPGRADE_PIN;
 
 /**
@@ -63,8 +63,9 @@ public class PromptManager {
         PAPER_KEY,
         UPGRADE_PIN,
         RECOMMEND_RESCAN,
-        NO_PASSCODE,
-        SHARE_DATA
+        NO_PASSCODE
+        // TODO: Implement anonymous data aggregation
+        // SHARE_DATA
     }
 
     public class PromptInfo {
@@ -93,8 +94,8 @@ public class PromptManager {
                 return BRKeyStore.getPinCode(app).length() != 6;
             case RECOMMEND_RESCAN:
                 return BRSharedPrefs.getScanRecommended(app);
-            case SHARE_DATA:
-                return !BRSharedPrefs.getShareData(app) && !BRSharedPrefs.getShareDataDismissed(app);
+            /*case SHARE_DATA:
+                return !BRSharedPrefs.getShareData(app) && !BRSharedPrefs.getShareDataDismissed(app);*/
 
         }
         return false;
@@ -105,7 +106,7 @@ public class PromptManager {
         if (shouldPrompt(app, UPGRADE_PIN)) return UPGRADE_PIN;
         if (shouldPrompt(app, PAPER_KEY)) return PAPER_KEY;
         if (shouldPrompt(app, FINGER_PRINT)) return FINGER_PRINT;
-        if (shouldPrompt(app, SHARE_DATA)) return SHARE_DATA;
+        // if (shouldPrompt(app, SHARE_DATA)) return SHARE_DATA;
         return null;
     }
 
@@ -152,7 +153,7 @@ public class PromptManager {
                         });
                     }
                 });
-            case SHARE_DATA:
+            /*case SHARE_DATA:
                 return new PromptInfo(app.getString(R.string.Prompts_ShareData_title), app.getString(R.string.Prompts_ShareData_body), new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -165,7 +166,7 @@ public class PromptManager {
                             }
                         });
                     }
-                });
+                });*/
 
         }
         return null;
@@ -191,8 +192,8 @@ public class PromptManager {
                 return "recommendRescanPrompt";
             case NO_PASSCODE:
                 return "noPasscodePrompt";
-            case SHARE_DATA:
-                return "shareDataPrompt";
+            /*case SHARE_DATA:
+                return "shareDataPrompt";*/
 
         }
         return null;

@@ -409,7 +409,10 @@ public class FragmentRequestAmount extends Fragment {
         if (getActivity() == null) return;
         String tmpAmount = amountBuilder.toString();
         amountEdit.setText(tmpAmount);
-        isoText.setText(BRCurrency.getSymbolByIso(getActivity(), selectedIso));
+        if (selectedIso.equals("MONA"))
+            isoText.setText("MONA");
+        else
+            isoText.setText(BRCurrency.getSymbolByIso(getActivity(), selectedIso));
         isoButton.setText(String.format("%s(%s)", BRCurrency.getCurrencyName(getActivity(), selectedIso), BRCurrency.getSymbolByIso(getActivity(), selectedIso)));
 
     }

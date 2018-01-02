@@ -195,14 +195,15 @@ public class SettingsActivity extends BRActivity {
 
         items.add(new BRSettingsItem("", "", null, true));
 
-        items.add(new BRSettingsItem(getString(R.string.Settings_shareData), "", new View.OnClickListener() {
+        /*items.add(new BRSettingsItem(getString(R.string.Settings_shareData), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SettingsActivity.this, ShareDataActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }
-        }, false));
+        }, false));*/
+
         boolean eaEnabled = APIClient.getInstance(this).isFeatureEnabled(APIClient.FeatureFlags.EARLY_ACCESS.toString());
         eaEnabled = false;
         if (eaEnabled)
@@ -216,6 +217,7 @@ public class SettingsActivity extends BRActivity {
                     app.overridePendingTransition(R.anim.enter_from_bottom, R.anim.empty_300);
                 }
             }, false));
+
         items.add(new BRSettingsItem(getString(R.string.Settings_about), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -224,7 +226,9 @@ public class SettingsActivity extends BRActivity {
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }
         }, false));
+
         items.add(new BRSettingsItem("", "", null, true));
+
         items.add(new BRSettingsItem(getString(R.string.Settings_advancedTitle), "", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
