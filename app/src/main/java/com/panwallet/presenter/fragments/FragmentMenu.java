@@ -31,6 +31,7 @@ import com.platform.HTTPServer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import static com.panwallet.R.id.menu_listview;
 
@@ -115,7 +116,8 @@ public class FragmentMenu extends Fragment {
         itemList.add(new BRMenuItem(getString(R.string.MenuButton_support), R.drawable.ic_question_mark, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                BRAnimator.showSupportFragment(getActivity(), "https://www.panwallet.com/support");
+                String urlLocale = "https://translate.google.com/translate?js=n&sl=en&tl=" + Locale.getDefault().getLanguage() + "&u=panwallet.com/support.html";
+                BRAnimator.showSupportFragment(getActivity(), Locale.getDefault().getLanguage() == "en" ? "https://www.panwallet.com/support" : urlLocale);
             }
         }));
         itemList.add(new BRMenuItem(getString(R.string.MenuButton_settings), R.drawable.ic_settings, new View.OnClickListener() {

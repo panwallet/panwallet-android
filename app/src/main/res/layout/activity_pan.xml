@@ -105,7 +105,7 @@
                         android:layout_marginLeft="8dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="b0"
+                        android:text="0 MONA"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         app:customTFont="CircularPro-Book.otf"

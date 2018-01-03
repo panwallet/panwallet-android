@@ -60,7 +60,8 @@ import java.util.Locale;
  * THE SOFTWARE.
  */
 
-public class FragmentTransactionItem extends Fragment {
+public class
+FragmentTransactionItem extends Fragment {
     private static final String TAG = FragmentTransactionItem.class.getName();
 
     public TextView mTitle;

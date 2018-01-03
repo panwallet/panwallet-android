@@ -101,6 +101,9 @@ public class TransactionListAdapter extends RecyclerView.Adapter<RecyclerView.Vi
 //        boolean updateMetadata = items.size() != 0 && backUpFeed.size() != items.size() && BRSharedPrefs.getAllowSpend(mContext);
         this.itemFeed = items;
         this.backUpFeed = items;
+        for (TxItem i : items)
+            i.txReversed = Utils.reverseHex(Utils.bytesToHex(i.getTxHash()));
+
         updateTxHashes();
 
 //        if (updateMetadata)
