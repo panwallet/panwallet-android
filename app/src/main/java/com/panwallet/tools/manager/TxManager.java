@@ -173,6 +173,8 @@ public class TxManager {
             currentPrompt = toShow;
             promptInfo = PromptManager.getInstance().promptInfo(app, currentPrompt);
             updateCard(app);
+            if (currentPrompt == PromptManager.PromptItem.SHARE_DATA)
+                hidePrompt(app, null);
         } else {
             Log.i(TAG, "showNextPrompt: nothing to show");
         }
