@@ -16,6 +16,7 @@ import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
+import com.panwallet.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -141,7 +142,7 @@ public class QRUtils {
         } else {
             intent.setAction(android.content.Intent.ACTION_SEND);
             intent.setType("plain/text");
-            intent.putExtra(Intent.EXTRA_SUBJECT, "Bitcoin Address");
+            intent.putExtra(Intent.EXTRA_SUBJECT, app.getString(R.string.Receive_emailSubject));
             intent.putExtra(Intent.EXTRA_TEXT, bitcoinUri);
             app.startActivity(Intent.createChooser(intent, "Open mail app"));
         }

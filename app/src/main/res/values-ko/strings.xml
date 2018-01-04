@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
   <!-- App name -->
-  <string name="About.appName.android">Bread</string>
+  <string name="About.appName.android">Pan</string>
   <!-- About screen blog label -->
   <string name="About.blog">블로그</string>
   <!-- About screen footer -->
-  <string name="About.footer">글로벌 Bread 팀 제작. 버전 %1$s</string>
+  <string name="About.footer">글로벌 Pan 팀 제작. 버전 %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">개인정보 보호정책</string>
   <!-- About screen reddit label -->
@@ -23,7 +23,7 @@
   <!-- Loading Wallet Message -->
   <string name="Account.loadingMessage">지갑 로딩</string>
   <!-- Default wallet name -->
-  <string name="AccountHeader.defaultWalletName">나의 Bread</string>
+  <string name="AccountHeader.defaultWalletName">나의 Pan</string>
   <!-- Equals symbol -->
   <string name="AccountHeader.equals">=</string>
   <!-- Manage wallet button title -->
@@ -33,7 +33,7 @@
   <!-- Error alert title -->
   <string name="Alert.error">오류</string>
   <!-- Keystore error -->
-  <string name="Alert.keystore.generic.android">귀하의 안드로이드 OS 키스토어에 문제가 있습니다, support@breadwallet.com로 연락해 주세요</string>
+  <string name="Alert.keystore.generic.android">귀하의 안드로이드 OS 키스토어에 문제가 있습니다, support@panwallet.com로 연락해 주세요</string>
   <!-- KeyStore error, keys are invalidated -->
   <string name="Alert.keystore.invalidated.android">귀하의 안드로이드 잠금 화면이 꺼져서 귀하의 암호화 된 데이터가 최근 무효화 되었습니다.</string>
   <!-- Keystore error title -->
@@ -88,8 +88,8 @@
   <string name="BCH.txHashHeader">BCH Transaction ID</string>
   <!-- Approve button label -->
   <string name="BitID.approve">승인</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
-  <string name="BitID.authenticationRequest">%1$s(이)가 귀하의 비트코인 월렛 이용에 대한 인증을 요청하고 있습니다.</string>
+  <!-- <sitename> is requesting authentication using your monacoin wallet -->
+  <string name="BitID.authenticationRequest">%1$s(이)가 귀하의 모나코인 월렛 이용에 대한 인증을 요청하고 있습니다.</string>
   <!-- Deny button label -->
   <string name="BitID.deny">거부</string>
   <!-- BitID error alert title -->
@@ -140,8 +140,8 @@
   <string name="ConfirmPaperPhrase.label">모든 것이 정확하게 적혀 있는지 확인하기 위해, 귀하의 종이 열쇠로부터 다음의 단어들을 입력해 주세요.</string>
   <!-- Word label eg. Word #1, Word #2 -->
   <string name="ConfirmPaperPhrase.word">단어 #%1$s</string>
-  <!-- Bitcoin denomination picker label -->
-  <string name="DefaultCurrency.bitcoinLabel">Bitcoin Display Unit</string>
+  <!-- Monacoin denomination picker label -->
+  <string name="DefaultCurrency.bitcoinLabel">Monacoin Display Unit</string>
   <!-- Exchange rate label -->
   <string name="DefaultCurrency.rateLabel">환율</string>
   <!-- Email unavailable alert title -->
@@ -171,7 +171,7 @@
   <!-- Checking private key balance progress view text -->
   <string name="Import.checking">개인 열쇠 잔고 확인 중...</string>
   <!-- Sweep private key confirmation message -->
-  <string name="Import.confirm">이 개인 열쇠로부터 귀하의 지갑으로 %1$s 를 보낼까요? 비트코인 네트워크가 %2$s의 수수료를 받게 됩니다.</string>
+  <string name="Import.confirm">이 개인 열쇠로부터 귀하의 지갑으로 %1$s 를 보낼까요? 모나코인 네트워크가 %2$s의 수수료를 받게 됩니다.</string>
   <!-- Duplicate key error message -->
   <string name="Import.Error.duplicate">이 개인 열쇠가 이미 귀하의 지갑에 있습니다.</string>
   <!-- empty private key error message -->
@@ -189,13 +189,13 @@
   <!-- Caption for graphics -->
   <string name="Import.leftCaption">불러오기 할 지갑</string>
   <!-- Import wallet intro screen message -->
-  <string name="Import.message">지갑 불러오기는 단일 거래를 사용하여 귀하의 다른 지갑으로부터 귀하의 Bread 지갑으로 모든 돈을 송금합니다.</string>
+  <string name="Import.message">지갑 불러오기는 단일 거래를 사용하여 귀하의 다른 지갑으로부터 귀하의 Pan 지갑으로 모든 돈을 송금합니다.</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">이 개인 열쇠는 비밀번호로 보호됩니다.</string>
   <!-- password textfield placeholder -->
   <string name="Import.passwordPlaceholder">비밀번호</string>
   <!-- Caption for graphics -->
-  <string name="Import.rightCaption">귀하의 Bread 지갑</string>
+  <string name="Import.rightCaption">귀하의 Pan 지갑</string>
   <!-- Scan Private key button label -->
   <string name="Import.scan">개인 열쇠 스캔</string>
   <!-- Import wallet success alert title -->
@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">무시</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">장치 보안 취약\n모든 \'jailbreak\' 앱이 Bread의 키체인 데이터에 접속하여 귀하의 비트코인을 훔칠 수 있습니다! 이 지갑을 바로 지우시고 안전한 장치에서 복구하세요.</string>
+  <string name="JailbreakWarnings.messageWithBalance">장치 보안 취약\n모든 \'jailbreak\' 앱이 Pan의 키체인 데이터에 접속하여 귀하의 모나코인을 훔칠 수 있습니다! 이 지갑을 바로 지우시고 안전한 장치에서 복구하세요.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">장치 보안 취약\n모든 \'jailbreak\' 앱이 Bread의 키체인 데이터에 접속하여 귀하의 비트코인을 훔칠 수 있습니다! Bread를 비-jailbroken 장치에서만 사용해 주세요.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">장치 보안 취약\n모든 \'jailbreak\' 앱이 Pan의 키체인 데이터에 접속하여 귀하의 모나코인을 훔칠 수 있습니다! Pan를 비-jailbroken 장치에서만 사용해 주세요.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">경고</string>
   <!-- Wipe wallet button -->
@@ -225,7 +225,7 @@
   <!-- Location services disabled error -->
   <string name="LocationPlugin.disabled">위치 서비스가 꺼졌습니다.</string>
   <!-- No permissions for location services -->
-  <string name="LocationPlugin.notAuthorized">Bread가 위치 서비스 접속 권한이 없습니다.</string>
+  <string name="LocationPlugin.notAuthorized">Pan가 위치 서비스 접속 권한이 없습니다.</string>
   <!-- Wallet creation date prefix -->
   <string name="ManageWallet.creationDatePrefix">귀하께서는 %1$s 에 지갑을 만들었습니다</string>
   <!-- Manage wallet description text -->
@@ -234,8 +234,8 @@
   <string name="ManageWallet.textFeildLabel">지갑 이름</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">지갑 관리</string>
-  <!-- Buy bitcoin title -->
-  <string name="MenuButton.buy">비트코인 구매</string>
+  <!-- Buy monacoin title -->
+  <string name="MenuButton.buy">모나코인 구매</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">지갑 잠그기</string>
   <!-- Menu button title -->
@@ -267,7 +267,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">노드 연결 상태</string>
   <!-- Node Selector view title -->
-  <string name="NodeSelector.title">비트코인 노드</string>
+  <string name="NodeSelector.title">모나코인 노드</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">틀린 결제 요청</string>
   <!-- Error opening payment protocol file message -->
@@ -279,9 +279,9 @@
   <!-- Payment too small alert title -->
   <string name="PaymentProtocol.Errors.smallOutputError">결제를 할 수 없습니다</string>
   <!-- Amount too small error message -->
-  <string name="PaymentProtocol.Errors.smallPayment">비트코인 결제는 %1$s 보다 작을 수 없습니다.</string>
+  <string name="PaymentProtocol.Errors.smallPayment">모나코인 결제는 %1$s 보다 작을 수 없습니다.</string>
   <!-- Output too small error message. -->
-  <string name="PaymentProtocol.Errors.smallTransaction">비트코인 거래 출력들은 %1$s보다 작을 수 없습니다.</string>
+  <string name="PaymentProtocol.Errors.smallTransaction">모나코인 거래 출력들은 %1$s보다 작을 수 없습니다.</string>
   <!-- Unsupported signature type payment protocol error message -->
   <string name="PaymentProtocol.Errors.unsupportedSignatureType">지원되지 않는 서명 형태</string>
   <!-- Untrusted certificate payment protocol error message -->
@@ -303,7 +303,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">거래 거절됨</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">Bread가 발전할 수 있도록 익명 데이터를 공유해주십시오</string>
+  <string name="Prompts.ShareData.body">Pan가 발전할 수 있도록 익명 데이터를 공유해주십시오</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">익명 데이터 공유</string>
   <!-- Enable touch ID prompt body -->
@@ -334,6 +334,8 @@
   <string name="Receive.copied">클립보드에 복사되었습니다.</string>
   <!-- Share via email button label -->
   <string name="Receive.emailButton">이메일</string>
+  <!-- Email subject line -->
+  <string name="Receive.emailSubject">모나코인 주소를</string>
   <!-- Request button label -->
   <string name="Receive.request">금액 요청</string>
   <!-- Share button label -->
@@ -368,7 +370,7 @@
   <string name="RecoverWallet.subheader_reset_pin">PIN을 재설정하려면, 페이퍼 키의 단어들을 아래 상자에 입력해 주세요.</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">먼저 금액을 입력해 주세요.</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of monacoin -->
   <string name="RequestAnAmount.title">금액 요청</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">동기화</string>
@@ -379,7 +381,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20-45분</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">거래가 비트코인 네트워크에는 완료된 것으로 표시되지만, 브레드에는 표시되지 않는 경우.</string>
+  <string name="ReScan.body2">거래가 모나코인 네트워크에는 완료된 것으로 표시되지만, 브레드에는 표시되지 않는 경우.</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">거래가 거절되었음을 알리는 오류 메시지가 반복적으로 나타납니다.</string>
   <!-- Start Sync button label -->
@@ -392,7 +394,7 @@
   <string name="ReScan.subheader1">예상 시간</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">동기화는 언제 해야 합니까?</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan monacoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">카메라 플래시</string>
   <!-- Complete filter label -->
   <string name="Search.complete">완료</string>
@@ -405,7 +407,7 @@
   <!-- Security Center Info -->
   <string name="SecurityCenter.info">최대한의 보호를 위해 모든 보안 기능을 사용하시기 바랍니다.</string>
   <!-- Paper Key button description -->
-  <string name="SecurityCenter.paperKeyDescription">전화를 분실하거나 업그레이드하는 경우, 비트코인에 액세스할 수 있는 유일한 방법입니다.</string>
+  <string name="SecurityCenter.paperKeyDescription">전화를 분실하거나 업그레이드하는 경우, 모나코인에 액세스할 수 있는 유일한 방법입니다.</string>
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">페이퍼 키</string>
   <!-- PIN button description -->
@@ -425,9 +427,9 @@
   <!-- Balance: $4.00 -->
   <string name="Send.balance">잔액: %1$s</string>
   <!-- Instructions how to allow the camera access for the app -->
-  <string name="Send.cameraUnavailabeMessage.android">\"설정\" &gt; \"앱\" &gt; \"Bread\" &gt; \"허용\"에서 카메라 접속을 허용해 주세요</string>
+  <string name="Send.cameraUnavailabeMessage.android">\"설정\" &gt; \"앱\" &gt; \"Pan\" &gt; \"허용\"에서 카메라 접속을 허용해 주세요</string>
   <!-- Permission required to access camera -->
-  <string name="Send.cameraUnavailabeTitle.android">Bread의 카메라 접속이 허용되지 않았습니다</string>
+  <string name="Send.cameraUnavailabeTitle.android">Pan의 카메라 접속이 허용되지 않았습니다</string>
   <!-- Camera not allowed message -->
   <string name="Send.cameraunavailableMessage">설정에서 카메라 액세스를 허가해 주세요.</string>
   <!-- Camera not allowed alert title -->
@@ -445,9 +447,9 @@
   <!-- Payee identity not certified alert title. -->
   <string name="Send.identityNotCertified">인증되지 않은 수취인입니다.</string>
   <!-- Invalid address alert message -->
-  <string name="Send.invalidAddressMessage">해당 수취인 주소는 비트코인에서 유효하지 않은 주소입니다.</string>
+  <string name="Send.invalidAddressMessage">해당 수취인 주소는 모나코인에서 유효하지 않은 주소입니다.</string>
   <!-- Invalid address on pasteboard message -->
-  <string name="Send.invalidAddressOnPasteboard">클립보드가 유효한 비트코인 주소를 가지고 있지 않습니다</string>
+  <string name="Send.invalidAddressOnPasteboard">클립보드가 유효한 모나코인 주소를 가지고 있지 않습니다</string>
   <!-- Invalid address alert title -->
   <string name="Send.invalidAddressTitle">유효하지 않은 주소입니다</string>
   <!-- Is rescanning error message -->
@@ -473,7 +475,7 @@
   <!-- Send money to label -->
   <string name="Send.toLabel">수취인</string>
   <!-- Adress already used alert message - first part -->
-  <string name="Send.UsedAddress.firstLine">비트코인 주소는 일회용입니다.</string>
+  <string name="Send.UsedAddress.firstLine">모나코인 주소는 일회용입니다.</string>
   <!-- Adress already used alert message - second part -->
   <string name="Send.UsedAddress.secondLIne">주소를 재사용할 경우 귀하와 받는 사람 모두의 개인 정보 보호가 약해지며, 받는 사람이 직접 주소를 관리하지 않을 경우 분실을 초래할 수 있습니다.</string>
   <!-- Adress already used alert title -->
@@ -486,7 +488,7 @@
   <string name="Settings.currency">통화 보기</string>
   <!-- Join Early access label -->
   <string name="Settings.earlyAccess">초기 버전을 사용해 보세요</string>
-  <!-- Are you enjoying bread alert message body -->
+  <!-- Are you enjoying pan alert message body -->
   <string name="Settings.enjoying">브레드를 사용하고 있으신가요?</string>
   <!-- Import wallet label -->
   <string name="Settings.importTitle">지갑 내보내기</string>
@@ -525,7 +527,7 @@
   <!-- Argument is date -->
   <string name="StartPaperPhrase.date">%1$s에 마지막으로 페이퍼 키를 작성하셨습니다.</string>
   <!-- Start view message -->
-  <string name="StartViewController.message">비트코인을 사용하는 가장 안정되고 안전한 방법.</string>
+  <string name="StartViewController.message">모나코인을 사용하는 가장 안정되고 안전한 방법.</string>
   <!-- Syncing view connectiong state header text -->
   <string name="SyncingView.connecting">연결 중</string>
   <!-- Syncing view header text -->
@@ -558,7 +560,7 @@
   <string name="TouchIdSettings.spendingLimit">지불 한도: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
   <string name="TouchIdSettings.switchLabel">브레드에서</string>
-  <!-- Enable fingerprint for this wallet called Bread -->
+  <!-- Enable fingerprint for this wallet called Pan -->
   <string name="TouchIdSettings.switchLabel.android">지문 본인확인 켜기</string>
   <!-- Touch ID settings view title -->
   <string name="TouchIdSettings.title">터치 ID</string>
@@ -635,7 +637,7 @@
   <!-- "Sent [$5] to [address]" => This is the "to [address]" part. -->
   <string name="TransactionDetails.to">%1$s에게</string>
   <!-- Transaction ID header -->
-  <string name="TransactionDetails.txHashHeader">Bitcoin Transaction ID</string>
+  <string name="TransactionDetails.txHashHeader">Monacoin Transaction ID</string>
   <!-- (this transaction was) Received at this address: -->
   <string name="TransactionDirection.address">이 주소에서 받음</string>
   <!-- (this transaction was) Sent to this address: -->
@@ -653,7 +655,7 @@
   <!-- Instruction to touch the sensor for fingerprint authentication -->
   <string name="UnlockScreen.touchIdInstructions.android">터치 센서</string>
   <!-- TouchID prompt text -->
-  <string name="UnlockScreen.touchIdPrompt">Bread의 잠금을 해제하세요.</string>
+  <string name="UnlockScreen.touchIdPrompt">Pan의 잠금을 해제하세요.</string>
   <!-- Device authentication body -->
   <string name="UnlockScreen.touchIdPrompt.android">계속하시려면 귀하의 안드로이드 장치 잠금을 해제해 주세요.</string>
   <!-- Unlock with TouchID accessibility label -->
@@ -663,9 +665,9 @@
   <!-- Wallet unlocked message -->
   <string name="UnlockScreen.unlocked">월렛의 잠금이 해제됨</string>
   <!-- Update PIN caption text -->
-  <string name="UpdatePin.caption">이 PIN 코드를 기억하세요. PIN 코드를 잊어버리면 자신의 비트코인을 사용할 수 없게 됩니다.</string>
+  <string name="UpdatePin.caption">이 PIN 코드를 기억하세요. PIN 코드를 잊어버리면 자신의 모나코인을 사용할 수 없게 됩니다.</string>
   <!-- PIN creation info. -->
-  <string name="UpdatePin.createInstruction">귀하의 PIN 코드는 Bread의 잠금을 해제하고 돈을 송금하는 데 사용됩니다.</string>
+  <string name="UpdatePin.createInstruction">귀하의 PIN 코드는 Pan의 잠금을 해제하고 돈을 송금하는 데 사용됩니다.</string>
   <!-- Update PIN title -->
   <string name="UpdatePin.createTitle">PIN 설정</string>
   <!-- Update PIN title -->
@@ -699,7 +701,7 @@
   <!-- Authorize transaction with touch id message -->
   <string name="VerifyPin.touchIdMessage">이 거래 승인</string>
   <!-- 'No wallet' warning for watch app -->
-  <string name="Watch.noWalletWarning">귀하의 월렛을 설정하려면 Bread 앱을 열어 주세요.</string>
+  <string name="Watch.noWalletWarning">귀하의 월렛을 설정하려면 Pan 앱을 열어 주세요.</string>
   <!-- Dismiss button label -->
   <string name="Webview.dismiss">무시</string>
   <!-- Webview loading error message -->
@@ -707,9 +709,9 @@
   <!-- Updating webview message -->
   <string name="Webview.updating">업데이트 중...</string>
   <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-  <string name="Welcome.body">Breadwallet이 이름을 Bread로 바꾸고 새롭게 단장하였으며 새로운 기능도 갖췄습니다.\n\n도움이 필요하시면 대부분 화면에서 우측 상단에 있는 (?)을(를) 클릭하십시오.</string>
+  <string name="Welcome.body">Panwallet이 이름을 Pan로 바꾸고 새롭게 단장하였으며 새로운 기능도 갖췄습니다.\n\n도움이 필요하시면 대부분 화면에서 우측 상단에 있는 (?)을(를) 클릭하십시오.</string>
   <!-- Top title of welcome screen -->
-  <string name="Welcome.title">Bread에 환영합니다!</string>
+  <string name="Welcome.title">Pan에 환영합니다!</string>
   <!-- Wipe wallet alert message -->
   <string name="WipeWallet.alertMessage">정말 이 월렛을 삭제할까요?</string>
   <!-- Wipe wallet alert title -->
@@ -721,9 +723,9 @@
   <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">월렛을 초기화하고 다른 월렛을 시작하거나 복원하려면 이 월렛의 초기화 문구를 입력해 주세요. 현재 잔액은 이 문구에 그대로 보관됩니다.</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">다른 지갑을 만들거나 복구하면 이 장치에서 다른 Bread 지갑을 이용하고 관리할 수 있습니다.</string>
+  <string name="WipeWallet.startMessage">다른 지갑을 만들거나 복구하면 이 장치에서 다른 Pan 지갑을 이용하고 관리할 수 있습니다.</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">이장치에서 현재 Bread 지갑을 더는 이용할 수 없게 됩니다. 잔고는 남아 있게 됩니다.</string>
+  <string name="WipeWallet.startWarning">이장치에서 현재 Pan 지갑을 더는 이용할 수 없게 됩니다. 잔고는 남아 있게 됩니다.</string>
   <!-- Wipe wallet navigation item title. -->
   <string name="WipeWallet.title">다른 월렛을 시작 또는 복원</string>
   <!-- Wipe wallet button title -->

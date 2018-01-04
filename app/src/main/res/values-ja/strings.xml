@@ -33,7 +33,7 @@
   <!-- Error alert title -->
   <string name="Alert.error">エラー</string>
   <!-- Keystore error -->
-  <string name="Alert.keystore.generic.android">Android OSのKeystoreに問題があります。support@breadwallet.com にお問い合わせください。</string>
+  <string name="Alert.keystore.generic.android">Android OSのKeystoreに問題があります。support@panwallet.com にお問い合わせください。</string>
   <!-- KeyStore error, keys are invalidated -->
   <string name="Alert.keystore.invalidated.android">お使いのAndroidロック画面が無効にされたため、暗号化されたブレッドのデータはつい最近無効になりました。</string>
   <!-- Keystore error title -->
@@ -88,8 +88,8 @@
   <string name="BCH.txHashHeader">BCHのトランザクションID</string>
   <!-- Approve button label -->
   <string name="BitID.approve">承認する</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
-  <string name="BitID.authenticationRequest">%1$sがビットコインウォレットを使っての認証を求めています</string>
+  <!-- <sitename> is requesting authentication using your monacoin wallet -->
+  <string name="BitID.authenticationRequest">%1$sがモナコインウォレットを使っての認証を求めています</string>
   <!-- Deny button label -->
   <string name="BitID.deny">拒否する</string>
   <!-- BitID error alert title -->
@@ -140,8 +140,8 @@
   <string name="ConfirmPaperPhrase.label">すべてが正しく書き留められていることを確認するため、紙の鍵に記入した下記のフレーズを入力してください。</string>
   <!-- Word label eg. Word #1, Word #2 -->
   <string name="ConfirmPaperPhrase.word">フレーズ #%1$s</string>
-  <!-- Bitcoin denomination picker label -->
-  <string name="DefaultCurrency.bitcoinLabel">ビットコインの表示単位</string>
+  <!-- Monacoin denomination picker label -->
+  <string name="DefaultCurrency.bitcoinLabel">モナコインの表示単位</string>
   <!-- Exchange rate label -->
   <string name="DefaultCurrency.rateLabel">為替レート</string>
   <!-- Email unavailable alert title -->
@@ -171,7 +171,7 @@
   <!-- Checking private key balance progress view text -->
   <string name="Import.checking">秘密鍵の残高確認中...</string>
   <!-- Sweep private key confirmation message -->
-  <string name="Import.confirm">この秘密鍵からウォレットに%1$sを送信しますか? ビットコインネットワークは手数料%2$sを頂戴します。</string>
+  <string name="Import.confirm">この秘密鍵からウォレットに%1$sを送信しますか? モナコインネットワークは手数料%2$sを頂戴します。</string>
   <!-- Duplicate key error message -->
   <string name="Import.Error.duplicate">この秘密鍵はすでにあなたのウォレットに存在しています。</string>
   <!-- empty private key error message -->
@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">無視する</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。</string>
+  <string name="JailbreakWarnings.messageWithBalance">端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのモナコインを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのビットコインを盗む恐れがあります!  ブレッドは必ず脱獄端末以外で利用してください。</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのモナコインを盗む恐れがあります!  ブレッドは必ず脱獄端末以外で利用してください。</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">警告</string>
   <!-- Wipe wallet button -->
@@ -234,8 +234,8 @@
   <string name="ManageWallet.textFeildLabel">ウォレットの名前</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">ウォレットを管理</string>
-  <!-- Buy bitcoin title -->
-  <string name="MenuButton.buy">ビットコインを購入</string>
+  <!-- Buy monacoin title -->
+  <string name="MenuButton.buy">モナコインを購入</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">ウォレットにロックを設定する</string>
   <!-- Menu button title -->
@@ -267,7 +267,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">ノードの接続状況</string>
   <!-- Node Selector view title -->
-  <string name="NodeSelector.title">ビットコインノード</string>
+  <string name="NodeSelector.title">モナコインノード</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">不正な支払い要求</string>
   <!-- Error opening payment protocol file message -->
@@ -279,9 +279,9 @@
   <!-- Payment too small alert title -->
   <string name="PaymentProtocol.Errors.smallOutputError">支払いが行えませんでした</string>
   <!-- Amount too small error message -->
-  <string name="PaymentProtocol.Errors.smallPayment">%1$s未満のビットコインの支払いは行えません。</string>
+  <string name="PaymentProtocol.Errors.smallPayment">%1$s未満のモナコインの支払いは行えません。</string>
   <!-- Output too small error message. -->
-  <string name="PaymentProtocol.Errors.smallTransaction">ビットコインのトランザクションの出力は%1$s以上である必要があります。</string>
+  <string name="PaymentProtocol.Errors.smallTransaction">モナコインのトランザクションの出力は%1$s以上である必要があります。</string>
   <!-- Unsupported signature type payment protocol error message -->
   <string name="PaymentProtocol.Errors.unsupportedSignatureType">署名の種類がサポートされていません</string>
   <!-- Untrusted certificate payment protocol error message -->
@@ -303,7 +303,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">トランザクションが拒否されました</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">匿名のデータを共有してBreadの機能向上に役立てる</string>
+  <string name="Prompts.ShareData.body">匿名のデータを共有してパンの機能向上に役立てる</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">匿名のデータを共有する</string>
   <!-- Enable touch ID prompt body -->
@@ -321,7 +321,7 @@
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">PINコードを更新する</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-  <string name="PushNotifications.body">今後、Breadからの特別なメッセージを受け取るために通知をオンにしてください。</string>
+  <string name="PushNotifications.body">今後、パンからの特別なメッセージを受け取るために通知をオンにしてください。</string>
   <!-- Push notifications toggle switch label -->
   <string name="PushNotifications.label">プッシュ通知</string>
   <!-- Push notifications are off label -->
@@ -334,6 +334,8 @@
   <string name="Receive.copied">クリップボードにコピーされました。</string>
   <!-- Share via email button label -->
   <string name="Receive.emailButton">メール</string>
+  <!-- Email subject line -->
+  <string name="Receive.emailSubject">モナコインアドレス</string>
   <!-- Request button label -->
   <string name="Receive.request">金額のリクエスト</string>
   <!-- Share button label -->
@@ -368,7 +370,7 @@
   <string name="RecoverWallet.subheader_reset_pin">PINコードをリセットするには、紙の鍵の中からこのフレーズを下記ボックスの中に入力してください。</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">初めに数量を入力してください。</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of monacoin -->
   <string name="RequestAnAmount.title">金額のリクエスト</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">同期</string>
@@ -379,7 +381,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20〜45分</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">ビットコインネットワークでトランザクションが完了したと表示されているが、Bread上では完了と表示されない場合。</string>
+  <string name="ReScan.body2">モナコインネットワークでトランザクションが完了したと表示されているが、パン上では完了と表示されない場合。</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">送金しているが、拒否され続けている場合。</string>
   <!-- Start Sync button label -->
@@ -392,7 +394,7 @@
   <string name="ReScan.subheader1">予定時刻</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">いつ同期しますか?</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan monacoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">カメラのフラッシュ</string>
   <!-- Complete filter label -->
   <string name="Search.complete">完了</string>
@@ -405,7 +407,7 @@
   <!-- Security Center Info -->
   <string name="SecurityCenter.info">セキュリティを最大限に高めるため、すべてのセキュリティ設定を有効にしてください。</string>
   <!-- Paper Key button description -->
-  <string name="SecurityCenter.paperKeyDescription">あなたが携帯電話を紛失したり、アップグレードした場合にご自身のビットコインへアクセスできる唯一の方法です。</string>
+  <string name="SecurityCenter.paperKeyDescription">あなたが携帯電話を紛失したり、アップグレードした場合にご自身のモナコインへアクセスできる唯一の方法です。</string>
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">ペーパーキー</string>
   <!-- PIN button description -->
@@ -415,7 +417,7 @@
   <!-- Security Center Title -->
   <string name="SecurityCenter.title">セキュリティセンター</string>
   <!-- Touch ID button description -->
-  <string name="SecurityCenter.touchIdDescription">Breadロック解除の他、設定した限度額までの送金も指紋認証で出来ます。</string>
+  <string name="SecurityCenter.touchIdDescription">パンロック解除の他、設定した限度額までの送金も指紋認証で出来ます。</string>
   <!-- Touch ID button title -->
   <string name="SecurityCenter.touchIdTitle">Touch ID</string>
   <!-- Security center fingerprint authentication button -->
@@ -445,9 +447,9 @@
   <!-- Payee identity not certified alert title. -->
   <string name="Send.identityNotCertified">受取人の本人確認が行われていません。</string>
   <!-- Invalid address alert message -->
-  <string name="Send.invalidAddressMessage">送金先のアドレスが無効なビットコインアドレスです。</string>
+  <string name="Send.invalidAddressMessage">送金先のアドレスが無効なモナコインアドレスです。</string>
   <!-- Invalid address on pasteboard message -->
-  <string name="Send.invalidAddressOnPasteboard">ペーストボードに有効なビットコインアドレスが入っていません。</string>
+  <string name="Send.invalidAddressOnPasteboard">ペーストボードに有効なモナコインアドレスが入っていません。</string>
   <!-- Invalid address alert title -->
   <string name="Send.invalidAddressTitle">無効なアドレスです</string>
   <!-- Is rescanning error message -->
@@ -473,7 +475,7 @@
   <!-- Send money to label -->
   <string name="Send.toLabel">宛先</string>
   <!-- Adress already used alert message - first part -->
-  <string name="Send.UsedAddress.firstLine">ビットコインアドレスは、個人利用のみを想定しています。</string>
+  <string name="Send.UsedAddress.firstLine">モナコインアドレスは、個人利用のみを想定しています。</string>
   <!-- Adress already used alert message - second part -->
   <string name="Send.UsedAddress.secondLIne">再利用は、最初の利用者と受取人の両方のプライバシーの侵害につながるおそれがあり、受取人がアドレスを直接管理しない場合、損害につながるおそれもあります。</string>
   <!-- Adress already used alert title -->
@@ -486,7 +488,7 @@
   <string name="Settings.currency">表示される通貨</string>
   <!-- Join Early access label -->
   <string name="Settings.earlyAccess">早期アクセスに参加</string>
-  <!-- Are you enjoying bread alert message body -->
+  <!-- Are you enjoying pan alert message body -->
   <string name="Settings.enjoying">ブレッドをお楽しみいただいていますか?</string>
   <!-- Import wallet label -->
   <string name="Settings.importTitle">ウォレットをインポート</string>
@@ -525,7 +527,7 @@
   <!-- Argument is date -->
   <string name="StartPaperPhrase.date">あなたが最後に紙の鍵を書き留めたのは %1$sです</string>
   <!-- Start view message -->
-  <string name="StartViewController.message">最も安全にビットコインを使う手段。</string>
+  <string name="StartViewController.message">最も安全にモナコインを使う手段。</string>
   <!-- Syncing view connectiong state header text -->
   <string name="SyncingView.connecting">接続中</string>
   <!-- Syncing view header text -->
@@ -558,7 +560,7 @@
   <string name="TouchIdSettings.spendingLimit">利用限度: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
   <string name="TouchIdSettings.switchLabel">ブレッドでTouch IDの有効化</string>
-  <!-- Enable fingerprint for this wallet called Bread -->
+  <!-- Enable fingerprint for this wallet called Pan -->
   <string name="TouchIdSettings.switchLabel.android">指紋認証を有効にする</string>
   <!-- Touch ID settings view title -->
   <string name="TouchIdSettings.title">Touch ID</string>
@@ -635,7 +637,7 @@
   <!-- "Sent [$5] to [address]" => This is the "to [address]" part. -->
   <string name="TransactionDetails.to">%1$sに</string>
   <!-- Transaction ID header -->
-  <string name="TransactionDetails.txHashHeader">ビットコイン トランザクションID</string>
+  <string name="TransactionDetails.txHashHeader">モナコイン トランザクションID</string>
   <!-- (this transaction was) Received at this address: -->
   <string name="TransactionDirection.address">このアドレスで受け取りました</string>
   <!-- (this transaction was) Sent to this address: -->
@@ -663,7 +665,7 @@
   <!-- Wallet unlocked message -->
   <string name="UnlockScreen.unlocked">ウォレットのロックが解除されました</string>
   <!-- Update PIN caption text -->
-  <string name="UpdatePin.caption">このPINコードは覚えておいてください。忘れた場合、ご自身のビットコインへアクセスできなくなります。</string>
+  <string name="UpdatePin.caption">このPINコードは覚えておいてください。忘れた場合、ご自身のモナコインへアクセスできなくなります。</string>
   <!-- PIN creation info. -->
   <string name="UpdatePin.createInstruction">あなたのPINコードはご自身のブレッドのロックを解除したり、送金する時に利用します。</string>
   <!-- Update PIN title -->
@@ -699,7 +701,7 @@
   <!-- Authorize transaction with touch id message -->
   <string name="VerifyPin.touchIdMessage">このトランザクションを認証する</string>
   <!-- 'No wallet' warning for watch app -->
-  <string name="Watch.noWalletWarning">BreadのiPhoneアプリを開き、ウォレットをセットアップする</string>
+  <string name="Watch.noWalletWarning">パンのiPhoneアプリを開き、ウォレットをセットアップする</string>
   <!-- Dismiss button label -->
   <string name="Webview.dismiss">解除</string>
   <!-- Webview loading error message -->
@@ -707,9 +709,9 @@
   <!-- Updating webview message -->
   <string name="Webview.updating">更新中...</string>
   <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-  <string name="Welcome.body">Breadwalletは新しい見た目と新機能を備えて、Breadという名前に生まれ変わりました。\n\nヘルプをご覧になるには、ほとんどの画面の右上にある(?)をお探しください。</string>
+  <string name="Welcome.body">パンwalletは新しい見た目と新機能を備えて、パンという名前に生まれ変わりました。\n\nヘルプをご覧になるには、ほとんどの画面の右上にある(?)をお探しください。</string>
   <!-- Top title of welcome screen -->
-  <string name="Welcome.title">Breadへようこそ！</string>
+  <string name="Welcome.title">パンへようこそ！</string>
   <!-- Wipe wallet alert message -->
   <string name="WipeWallet.alertMessage">本当にこのウォレットを削除しますか？</string>
   <!-- Wipe wallet alert title -->
@@ -721,9 +723,9 @@
   <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">ウォレットを消去し、新しいウォレットを作成したり、復元したりしたい場合は復旧フレーズを入力してください。この段階では残高は残っています。</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">別のウォレットを開設するか復元することにより、このデバイス上で異なるBreadウォレットへのアクセスと管理ができるようになります。</string>
+  <string name="WipeWallet.startMessage">別のウォレットを開設するか復元することにより、このデバイス上で異なるパンウォレットへのアクセスと管理ができるようになります。</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">このデバイスから現在使用中のBreadウォレットへのアクセスはできなくなります。残高はフレーズに残されます。</string>
+  <string name="WipeWallet.startWarning">このデバイスから現在使用中のパンウォレットへのアクセスはできなくなります。残高はフレーズに残されます。</string>
   <!-- Wipe wallet navigation item title. -->
   <string name="WipeWallet.title">別のウォレットを作成、または復元する</string>
   <!-- Wipe wallet button title -->

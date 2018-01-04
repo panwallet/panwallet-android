@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
   <!-- App name -->
-  <string name="About.appName.android">Bread</string>
+  <string name="About.appName.android">Pan</string>
   <!-- About screen blog label -->
   <string name="About.blog">Blog</string>
   <!-- About screen footer -->
-  <string name="About.footer">Gemaakt door het globale Bread team. Versie %1$s</string>
+  <string name="About.footer">Gemaakt door het globale Pan team. Versie %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Privacyverklaring</string>
   <!-- About screen reddit label -->
@@ -23,7 +23,7 @@
   <!-- Loading Wallet Message -->
   <string name="Account.loadingMessage">Portemonnee Laden</string>
   <!-- Default wallet name -->
-  <string name="AccountHeader.defaultWalletName">Mijn Bread</string>
+  <string name="AccountHeader.defaultWalletName">Mijn Pan</string>
   <!-- Equals symbol -->
   <string name="AccountHeader.equals">=</string>
   <!-- Manage wallet button title -->
@@ -33,9 +33,9 @@
   <!-- Error alert title -->
   <string name="Alert.error">Error</string>
   <!-- Keystore error -->
-  <string name="Alert.keystore.generic.android">Er is een probleem het uw Android OS keystore, neemt u alstublieft contact op met support@breadwallet.com</string>
+  <string name="Alert.keystore.generic.android">Er is een probleem het uw Android OS keystore, neemt u alstublieft contact op met support@panwallet.com</string>
   <!-- KeyStore error, keys are invalidated -->
-  <string name="Alert.keystore.invalidated.android">Uw door Bread geëncrypteerde data is onlangs ongeldig gemaakt omdat uw Android schermvergrendeling is uitgeschakeld.</string>
+  <string name="Alert.keystore.invalidated.android">Uw door Pan geëncrypteerde data is onlangs ongeldig gemaakt omdat uw Android schermvergrendeling is uitgeschakeld.</string>
   <!-- Keystore error title -->
   <string name="Alert.keystore.title.android">Android KeyStore fout</string>
   <!-- No internet alert message -->
@@ -88,8 +88,8 @@
   <string name="BCH.txHashHeader">BCH Transactie-ID.</string>
   <!-- Approve button label -->
   <string name="BitID.approve">Keur goed</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
-  <string name="BitID.authenticationRequest">%1$s vraagt om authenticatie om je bitcoin-portemonnee te gebruiken</string>
+  <!-- <sitename> is requesting authentication using your monacoin wallet -->
+  <string name="BitID.authenticationRequest">%1$s vraagt om authenticatie om je monacoin-portemonnee te gebruiken</string>
   <!-- Deny button label -->
   <string name="BitID.deny">Weigeren</string>
   <!-- BitID error alert title -->
@@ -140,8 +140,8 @@
   <string name="ConfirmPaperPhrase.label">Voer de volgende woorden in van je papieren sleutel om te verzekeren dat alles correct is opgeschreven.</string>
   <!-- Word label eg. Word #1, Word #2 -->
   <string name="ConfirmPaperPhrase.word">Woord #%1$s</string>
-  <!-- Bitcoin denomination picker label -->
-  <string name="DefaultCurrency.bitcoinLabel">Bitcoin-eenheid</string>
+  <!-- Monacoin denomination picker label -->
+  <string name="DefaultCurrency.bitcoinLabel">Monacoin-eenheid</string>
   <!-- Exchange rate label -->
   <string name="DefaultCurrency.rateLabel">Wisselkoers</string>
   <!-- Email unavailable alert title -->
@@ -171,7 +171,7 @@
   <!-- Checking private key balance progress view text -->
   <string name="Import.checking">Persoonlijke sleutel balans checken...</string>
   <!-- Sweep private key confirmation message -->
-  <string name="Import.confirm">%1$s van deze persoonlijke sleutel naar je portemonnee sturen? Het Bitcoin netwerk zal een heffing ontvangen van %2$s.</string>
+  <string name="Import.confirm">%1$s van deze persoonlijke sleutel naar je portemonnee sturen? Het Monacoin netwerk zal een heffing ontvangen van %2$s.</string>
   <!-- Duplicate key error message -->
   <string name="Import.Error.duplicate">Deze persoonlijke sleutel zit al in je portemonnee.</string>
   <!-- empty private key error message -->
@@ -189,13 +189,13 @@
   <!-- Caption for graphics -->
   <string name="Import.leftCaption">Portemonnee die geïmporteerd kan worden</string>
   <!-- Import wallet intro screen message -->
-  <string name="Import.message">Door een portemonnee te importeren plaats je het geld van je andere portemonnee naar je Bread portemonnee via een enkele transactie.</string>
+  <string name="Import.message">Door een portemonnee te importeren plaats je het geld van je andere portemonnee naar je Pan portemonnee via een enkele transactie.</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">Deze persoonlijke sleutel is beveiligd met een wachtwoord.</string>
   <!-- password textfield placeholder -->
   <string name="Import.passwordPlaceholder">wachtwoord</string>
   <!-- Caption for graphics -->
-  <string name="Import.rightCaption">Jouw Bread Portemonnee</string>
+  <string name="Import.rightCaption">Jouw Pan Portemonnee</string>
   <!-- Scan Private key button label -->
   <string name="Import.scan">Scan Persoonlijke Sleutel</string>
   <!-- Import wallet success alert title -->
@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">Negeren</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van Bread en kan hiermee je Bitcoins stelen! Wis deze portemonnee direct en herstel het op een veilig apparaat.</string>
+  <string name="JailbreakWarnings.messageWithBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van Pan en kan hiermee je Monacoins stelen! Wis deze portemonnee direct en herstel het op een veilig apparaat.</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van Bread en kan hiermee je Bitcoins stelen. Gebruik Bread a.u.b. alleen op een niet-gejailbreakt apparaat.</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">APPARAAT BEVEILIGING BESCHADIGD\nElke \'jailbreak\' app heeft toegang tot de sleutelhanger data van Pan en kan hiermee je Monacoins stelen. Gebruik Pan a.u.b. alleen op een niet-gejailbreakt apparaat.</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">WAARSCHUWING</string>
   <!-- Wipe wallet button -->
@@ -225,7 +225,7 @@
   <!-- Location services disabled error -->
   <string name="LocationPlugin.disabled">Locatievoorzieningen zijn uitgeschakeld.</string>
   <!-- No permissions for location services -->
-  <string name="LocationPlugin.notAuthorized">Bread heeft geen toestemming om locatievoorzieningen te gebruiken.</string>
+  <string name="LocationPlugin.notAuthorized">Pan heeft geen toestemming om locatievoorzieningen te gebruiken.</string>
   <!-- Wallet creation date prefix -->
   <string name="ManageWallet.creationDatePrefix">Je hebt je portemonnee gecreëerd op %1$s</string>
   <!-- Manage wallet description text -->
@@ -234,8 +234,8 @@
   <string name="ManageWallet.textFeildLabel">Portemonnee Naam</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">Portemonnee Beheren</string>
-  <!-- Buy bitcoin title -->
-  <string name="MenuButton.buy">Bitcoins Kopen</string>
+  <!-- Buy monacoin title -->
+  <string name="MenuButton.buy">Monacoins Kopen</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">Portemonnee Vergrendelen</string>
   <!-- Menu button title -->
@@ -267,7 +267,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">Connectiestatus van de node</string>
   <!-- Node Selector view title -->
-  <string name="NodeSelector.title">Bitcoin-nodes</string>
+  <string name="NodeSelector.title">Monacoin-nodes</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">Slecht Betalingsverzoek</string>
   <!-- Error opening payment protocol file message -->
@@ -279,9 +279,9 @@
   <!-- Payment too small alert title -->
   <string name="PaymentProtocol.Errors.smallOutputError">Kon de betaling niet uitvoeren</string>
   <!-- Amount too small error message -->
-  <string name="PaymentProtocol.Errors.smallPayment">Bitcoin betalingen kunnen niet minder zijn dan %1$s.</string>
+  <string name="PaymentProtocol.Errors.smallPayment">Monacoin betalingen kunnen niet minder zijn dan %1$s.</string>
   <!-- Output too small error message. -->
-  <string name="PaymentProtocol.Errors.smallTransaction">Bitcoin transactie outputs kunnen niet minder zijn dan %1$s.</string>
+  <string name="PaymentProtocol.Errors.smallTransaction">Monacoin transactie outputs kunnen niet minder zijn dan %1$s.</string>
   <!-- Unsupported signature type payment protocol error message -->
   <string name="PaymentProtocol.Errors.unsupportedSignatureType">niet-ondersteund handtekening type</string>
   <!-- Untrusted certificate payment protocol error message -->
@@ -303,7 +303,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">Transactie Geweigerd</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">Help ons bij het verbeteren van Bread door je anonieme data met ons te delen</string>
+  <string name="Prompts.ShareData.body">Help ons bij het verbeteren van Pan door je anonieme data met ons te delen</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">Deel Anonieme Data</string>
   <!-- Enable touch ID prompt body -->
@@ -317,11 +317,11 @@
   <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
   <string name="Prompts.TouchId.usePin.android">PIN</string>
   <!-- Upgrade PIN prompt body. -->
-  <string name="Prompts.UpgradePin.body">Bread is geüpgrade naar een 6-cijferige PIN. Tik hier om te upgraden.</string>
+  <string name="Prompts.UpgradePin.body">Pan is geüpgrade naar een 6-cijferige PIN. Tik hier om te upgraden.</string>
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">PIN Upgraden</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-  <string name="PushNotifications.body">Zet notificaties aan om in de toekomst speciale berichten van Brood te ontvangen.</string>
+  <string name="PushNotifications.body">Zet notificaties aan om in de toekomst speciale berichten van Pan te ontvangen.</string>
   <!-- Push notifications toggle switch label -->
   <string name="PushNotifications.label">Push Meldingen</string>
   <!-- Push notifications are off label -->
@@ -334,6 +334,8 @@
   <string name="Receive.copied">Gekopieerd naar plakbord.</string>
   <!-- Share via email button label -->
   <string name="Receive.emailButton">E-mail</string>
+  <!-- Email subject line -->
+  <string name="Receive.emailSubject">Monacoin-Adres</string>
   <!-- Request button label -->
   <string name="Receive.request">Een bedrag aanvragen</string>
   <!-- Share button label -->
@@ -351,7 +353,7 @@
   <!-- Enter paper key instruction -->
   <string name="RecoverWallet.instruction">Papieren Sleutel Invoeren</string>
   <!-- Recover wallet intro -->
-  <string name="RecoverWallet.intro">Herstel je Bread met je papieren sleutel.</string>
+  <string name="RecoverWallet.intro">Herstel je Pan met je papieren sleutel.</string>
   <!-- Invalid paper key message -->
   <string name="RecoverWallet.invalid">De papieren sleutel die je hebt ingevoerd is ongeldig. Check ieder woord a.u.b. en probeer het opnieuw.</string>
   <!-- Previous button accessibility label -->
@@ -368,7 +370,7 @@
   <string name="RecoverWallet.subheader_reset_pin">Om je PIN te resetten moet je de woorden van je papieren sleutel in onderstaande velden invoeren.</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">Vul alstublieft eerst een bedrag in.</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of monacoin -->
   <string name="RequestAnAmount.title">Een bedrag aanvragen</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">Synchroniseren</string>
@@ -379,7 +381,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20-45 minuten</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">Als een transactie als voltooid staat op het Bitcoin netwerk maar niet in je Bread.</string>
+  <string name="ReScan.body2">Als een transactie als voltooid staat op het Monacoin netwerk maar niet in je Pan.</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">Je kreeg herhaaldelijk een foutmelding die zei dat je transactie werd afgewezen.</string>
   <!-- Start Sync button label -->
@@ -392,7 +394,7 @@
   <string name="ReScan.subheader1">Geschatte tijd</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">Wanneer Synchroniseren?</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan monacoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">Camera Flits</string>
   <!-- Complete filter label -->
   <string name="Search.complete">complete</string>
@@ -405,17 +407,17 @@
   <!-- Security Center Info -->
   <string name="SecurityCenter.info">Activeer alle veiligheidsmaatregelen voor maximale bescherming.</string>
   <!-- Paper Key button description -->
-  <string name="SecurityCenter.paperKeyDescription">De enige manier om toegang te hebben tot je Bitcoins is als je je telefoon verliest of upgrade.</string>
+  <string name="SecurityCenter.paperKeyDescription">De enige manier om toegang te hebben tot je Monacoins is als je je telefoon verliest of upgrade.</string>
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">Papieren Sleutel</string>
   <!-- PIN button description -->
-  <string name="SecurityCenter.pinDescription">Beschermt je Bread van ongeautoriseerde gebruikers.</string>
+  <string name="SecurityCenter.pinDescription">Beschermt je Pan van ongeautoriseerde gebruikers.</string>
   <!-- PIN button title -->
   <string name="SecurityCenter.pinTitle">6-cijferige PIN</string>
   <!-- Security Center Title -->
   <string name="SecurityCenter.title">Veiligheidscentrum</string>
   <!-- Touch ID button description -->
-  <string name="SecurityCenter.touchIdDescription">Ontgrendel je Bread handig en stuur geld tot een bepaalde ingestelde limiet.</string>
+  <string name="SecurityCenter.touchIdDescription">Ontgrendel je Pan handig en stuur geld tot een bepaalde ingestelde limiet.</string>
   <!-- Touch ID button title -->
   <string name="SecurityCenter.touchIdTitle">Touch ID</string>
   <!-- Security center fingerprint authentication button -->
@@ -425,13 +427,13 @@
   <!-- Balance: $4.00 -->
   <string name="Send.balance">Balans: %1$s</string>
   <!-- Instructions how to allow the camera access for the app -->
-  <string name="Send.cameraUnavailabeMessage.android">Sta cameratoegang toe via \"Instellingen\" &gt; \"Apps\" &gt; \"Bread\" &gt; \"Toestemmingen\"</string>
+  <string name="Send.cameraUnavailabeMessage.android">Sta cameratoegang toe via \"Instellingen\" &gt; \"Apps\" &gt; \"Pan\" &gt; \"Toestemmingen\"</string>
   <!-- Permission required to access camera -->
-  <string name="Send.cameraUnavailabeTitle.android">Bread heeft geen toegang tot de camera</string>
+  <string name="Send.cameraUnavailabeTitle.android">Pan heeft geen toegang tot de camera</string>
   <!-- Camera not allowed message -->
   <string name="Send.cameraunavailableMessage">Ga naar Instellingen om camera gebruik toe te staan.</string>
   <!-- Camera not allowed alert title -->
-  <string name="Send.cameraUnavailableTitle">Bread heeft geen toestemming voor het gebruik van de camera</string>
+  <string name="Send.cameraUnavailableTitle">Pan heeft geen toestemming voor het gebruik van de camera</string>
   <!-- Warning when sending to self. -->
   <string name="Send.containsAddress">De bestemming is je eigen adres. Je kunt het niet naar jezelf sturen.</string>
   <!-- Could not create transaction alert title -->
@@ -445,9 +447,9 @@
   <!-- Payee identity not certified alert title. -->
   <string name="Send.identityNotCertified">Begunstigde is niet gecertifcieerd.</string>
   <!-- Invalid address alert message -->
-  <string name="Send.invalidAddressMessage">Het bestemmingsadres is geen geldig bitcoin-adres.</string>
+  <string name="Send.invalidAddressMessage">Het bestemmingsadres is geen geldig monacoin-adres.</string>
   <!-- Invalid address on pasteboard message -->
-  <string name="Send.invalidAddressOnPasteboard">Plakbord bevat geen geldig bitcoin adres.</string>
+  <string name="Send.invalidAddressOnPasteboard">Plakbord bevat geen geldig monacoin-adres.</string>
   <!-- Invalid address alert title -->
   <string name="Send.invalidAddressTitle">Ongeldig Adres</string>
   <!-- Is rescanning error message -->
@@ -473,7 +475,7 @@
   <!-- Send money to label -->
   <string name="Send.toLabel">Naar</string>
   <!-- Adress already used alert message - first part -->
-  <string name="Send.UsedAddress.firstLine">Bitcoin adressen zijn alleen bedoeld voor enkel gebruik.</string>
+  <string name="Send.UsedAddress.firstLine">Monacoin adressen zijn alleen bedoeld voor enkel gebruik.</string>
   <!-- Adress already used alert message - second part -->
   <string name="Send.UsedAddress.secondLIne">Hergebruikt vermindert privacy voor zowel jou en de ontvanger en kan resulteren in verlies als de ontvanger niet direct het adres beheert.</string>
   <!-- Adress already used alert title -->
@@ -486,8 +488,8 @@
   <string name="Settings.currency">Toon valuta</string>
   <!-- Join Early access label -->
   <string name="Settings.earlyAccess">Doe Mee aan Early Access</string>
-  <!-- Are you enjoying bread alert message body -->
-  <string name="Settings.enjoying">Vind je Bread leuk?</string>
+  <!-- Are you enjoying pan alert message body -->
+  <string name="Settings.enjoying">Vind je Pan leuk?</string>
   <!-- Import wallet label -->
   <string name="Settings.importTitle">Importeer Portemonnee</string>
   <!-- Manage settings section header -->
@@ -511,7 +513,7 @@
   <!-- Start or recover another wallet menu label. -->
   <string name="Settings.wipe">Begin of herstel een andere portomonnee</string>
   <!-- Share data view body -->
-  <string name="ShareData.body">Help om Bread te verbeteren door je anonieme data met ons te delen. Dit bevat geen financiële informatie. We respecteren je financiële privacy.</string>
+  <string name="ShareData.body">Help om Pan te verbeteren door je anonieme data met ons te delen. Dit bevat geen financiële informatie. We respecteren je financiële privacy.</string>
   <!-- Share data header -->
   <string name="ShareData.header">Data Delen?</string>
   <!-- Share data switch label. -->
@@ -519,13 +521,13 @@
   <!-- button label -->
   <string name="StartPaperPhrase.againButtonTitle">Schrijf Papieren Sleutel Opnieuw Op</string>
   <!-- Paper key explanation text. -->
-  <string name="StartPaperPhrase.body">Je papieren sleutel is de enige manier om je Bread te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.</string>
+  <string name="StartPaperPhrase.body">Je papieren sleutel is de enige manier om je Pan te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.</string>
   <!-- button label -->
   <string name="StartPaperPhrase.buttonTitle">Schrijf Papieren Sleutel Op</string>
   <!-- Argument is date -->
   <string name="StartPaperPhrase.date">Je hebt voor het laatst je papieren sleutel opgeschreven op %1$s</string>
   <!-- Start view message -->
-  <string name="StartViewController.message">De veiligste en betrouwbaarste manier om bitcoin te gebruiken.</string>
+  <string name="StartViewController.message">De veiligste en betrouwbaarste manier om monacoin te gebruiken.</string>
   <!-- Syncing view connectiong state header text -->
   <string name="SyncingView.connecting">Aan het verbinden</string>
   <!-- Syncing view header text -->
@@ -551,14 +553,14 @@
   <!-- Fingerprint Is Not Setup -->
   <string name="TouchIdSettings.disabledWarning.title.android">Authenticatie met vingerafdruk niet ingesteld</string>
   <!-- Touch Id screen label -->
-  <string name="TouchIdSettings.label">Gebruik je vingerafdruk om je Bread te ontgrendelen en geld tot een ingestelde limiet te versturen.</string>
+  <string name="TouchIdSettings.label">Gebruik je vingerafdruk om je Pan te ontgrendelen en geld tot een ingestelde limiet te versturen.</string>
   <!-- Link Text (see TouchIdSettings.customizeText) -->
   <string name="TouchIdSettings.linkText">Touch-ID uitgavenlimietscherm</string>
   <!-- Spending Limit: b100,000 ($100) -->
   <string name="TouchIdSettings.spendingLimit">Bestedingslimiet: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
-  <string name="TouchIdSettings.switchLabel">Schakel Touch ID in voor Bread</string>
-  <!-- Enable fingerprint for this wallet called Bread -->
+  <string name="TouchIdSettings.switchLabel">Schakel Touch ID in voor Pan</string>
+  <!-- Enable fingerprint for this wallet called Pan -->
   <string name="TouchIdSettings.switchLabel.android">Stel authenticatie met vingerafdruk</string>
   <!-- Touch ID settings view title -->
   <string name="TouchIdSettings.title">Touch ID</string>
@@ -635,7 +637,7 @@
   <!-- "Sent [$5] to [address]" => This is the "to [address]" part. -->
   <string name="TransactionDetails.to">aan %1$s</string>
   <!-- Transaction ID header -->
-  <string name="TransactionDetails.txHashHeader">Bitcoin Transactie-ID</string>
+  <string name="TransactionDetails.txHashHeader">Monacoin Transactie-ID</string>
   <!-- (this transaction was) Received at this address: -->
   <string name="TransactionDirection.address">Ontvangen op dit adres</string>
   <!-- (this transaction was) Sent to this address: -->
@@ -653,7 +655,7 @@
   <!-- Instruction to touch the sensor for fingerprint authentication -->
   <string name="UnlockScreen.touchIdInstructions.android">Aanraaksensor</string>
   <!-- TouchID prompt text -->
-  <string name="UnlockScreen.touchIdPrompt">Ontgrendel je Bread.</string>
+  <string name="UnlockScreen.touchIdPrompt">Ontgrendel je Pan.</string>
   <!-- Device authentication body -->
   <string name="UnlockScreen.touchIdPrompt.android">Ontgrendel alstublieft uw Android-apparaat om door te gaan.</string>
   <!-- Unlock with TouchID accessibility label -->
@@ -663,9 +665,9 @@
   <!-- Wallet unlocked message -->
   <string name="UnlockScreen.unlocked">Portemonnee Ontgrendeld</string>
   <!-- Update PIN caption text -->
-  <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Bitcoins te kunnen.</string>
+  <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Monacoins te kunnen.</string>
   <!-- PIN creation info. -->
-  <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je Bread te ontgrendelen en geld te versturen.</string>
+  <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je Pan te ontgrendelen en geld te versturen.</string>
   <!-- Update PIN title -->
   <string name="UpdatePin.createTitle">PIN Instellen</string>
   <!-- Update PIN title -->
@@ -699,7 +701,7 @@
   <!-- Authorize transaction with touch id message -->
   <string name="VerifyPin.touchIdMessage">Autoriseer deze transactie</string>
   <!-- 'No wallet' warning for watch app -->
-  <string name="Watch.noWalletWarning">Open de Bread iPhone app om je portemonnee in te stellen.</string>
+  <string name="Watch.noWalletWarning">Open de Pan iPhone app om je portemonnee in te stellen.</string>
   <!-- Dismiss button label -->
   <string name="Webview.dismiss">Verwerpen</string>
   <!-- Webview loading error message -->
@@ -707,9 +709,9 @@
   <!-- Updating webview message -->
   <string name="Webview.updating">Updaten...</string>
   <!-- Welcome screen text. (?) will be replaced with the help icon users should look for. -->
-  <string name="Welcome.body">Breadwallet is omgedoopt tot Bread, met een gloednieuw uiterlijk en enkele nieuwe functies.\n\nAls u hulp nodig hebt, zoek naar de (?) rechtsboven in de meeste schermen.</string>
+  <string name="Welcome.body">Panwallet is omgedoopt tot Pan, met een gloednieuw uiterlijk en enkele nieuwe functies.\n\nAls u hulp nodig hebt, zoek naar de (?) rechtsboven in de meeste schermen.</string>
   <!-- Top title of welcome screen -->
-  <string name="Welcome.title">Welkom bij Brood!</string>
+  <string name="Welcome.title">Welkom bij Pan!</string>
   <!-- Wipe wallet alert message -->
   <string name="WipeWallet.alertMessage">Weet je zeker dat je deze portomonnee wilt verwijderen?</string>
   <!-- Wipe wallet alert title -->
@@ -721,9 +723,9 @@
   <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">Voer de herstelzin van deze portomonnee in om hem te wissen of een anderen te herstellen. Je huidige saldo zal op deze zin blijven.</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">Een andere portemonnee beginnen of herstellen zal u toestaan om nog een Bread portemonnee op dit apparaat te gebruiken.</string>
+  <string name="WipeWallet.startMessage">Een andere portemonnee beginnen of herstellen zal u toestaan om nog een Pan portemonnee op dit apparaat te gebruiken.</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">U zal niet langer uw huidige Bread portemonnee kunnen bereiken vanaf dit apparaat. Uw saldo zal hetzelfde blijven.</string>
+  <string name="WipeWallet.startWarning">U zal niet langer uw huidige Pan portemonnee kunnen bereiken vanaf dit apparaat. Uw saldo zal hetzelfde blijven.</string>
   <!-- Wipe wallet navigation item title. -->
   <string name="WipeWallet.title">Start of herstel een anderen portomonnee</string>
   <!-- Wipe wallet button title -->

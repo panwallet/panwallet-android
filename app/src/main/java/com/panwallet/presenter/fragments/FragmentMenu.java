@@ -117,7 +117,7 @@ public class FragmentMenu extends Fragment {
             @Override
             public void onClick(View v) {
                 String urlLocale = "https://translate.google.com/translate?js=n&sl=en&tl=" + Locale.getDefault().getLanguage() + "&u=panwallet.com/support.html";
-                BRAnimator.showSupportFragment(getActivity(), Locale.getDefault().getLanguage() == "en" ? "https://www.panwallet.com/support" : urlLocale);
+                BRAnimator.showSupportFragment(getActivity(), Locale.getDefault().getLanguage().equals("en") ? "https://www.panwallet.com/support" : urlLocale);
             }
         }));
         itemList.add(new BRMenuItem(getString(R.string.MenuButton_settings), R.drawable.ic_settings, new View.OnClickListener() {
