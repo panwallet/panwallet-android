@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
   <!-- App name -->
-  <string name="About.appName.android">ブレッド</string>
+  <string name="About.appName.android">パン</string>
   <!-- About screen blog label -->
   <string name="About.blog">ブログ</string>
   <!-- About screen footer -->
-  <string name="About.footer">グローバルブレッドチームによって開発されました。バージョン %1$s</string>
+  <string name="About.footer">グローバルパンチームによって開発されました。バージョン %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">プライバシーポリシー</string>
   <!-- About screen reddit label -->
@@ -23,7 +23,7 @@
   <!-- Loading Wallet Message -->
   <string name="Account.loadingMessage">ウォレット読み込み中</string>
   <!-- Default wallet name -->
-  <string name="AccountHeader.defaultWalletName">マイブレッド</string>
+  <string name="AccountHeader.defaultWalletName">マイパン</string>
   <!-- Equals symbol -->
   <string name="AccountHeader.equals">=</string>
   <!-- Manage wallet button title -->
@@ -35,7 +35,7 @@
   <!-- Keystore error -->
   <string name="Alert.keystore.generic.android">Android OSのKeystoreに問題があります。support@panwallet.com にお問い合わせください。</string>
   <!-- KeyStore error, keys are invalidated -->
-  <string name="Alert.keystore.invalidated.android">お使いのAndroidロック画面が無効にされたため、暗号化されたブレッドのデータはつい最近無効になりました。</string>
+  <string name="Alert.keystore.invalidated.android">お使いのAndroidロック画面が無効にされたため、暗号化されたパンのデータはつい最近無効になりました。</string>
   <!-- Keystore error title -->
   <string name="Alert.keystore.title.android">Android KeyStoreエラー</string>
   <!-- No internet alert message -->
@@ -189,13 +189,13 @@
   <!-- Caption for graphics -->
   <string name="Import.leftCaption">インポート\nされる\nウォレット</string>
   <!-- Import wallet intro screen message -->
-  <string name="Import.message">ウォレットをインポートすると、1回のトランザクションで、ご自身の他のウォレットからすべてのお金をブレッドのウォレットへ転送できます。</string>
+  <string name="Import.message">ウォレットをインポートすると、1回のトランザクションで、ご自身の他のウォレットからすべてのお金をパンのウォレットへ転送できます。</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">この秘密鍵はパスワードで保護されています。</string>
   <!-- password textfield placeholder -->
   <string name="Import.passwordPlaceholder">パスワード</string>
   <!-- Caption for graphics -->
-  <string name="Import.rightCaption">あなたの\nブレッドの\nウォレット</string>
+  <string name="Import.rightCaption">あなたの\nパンの\nウォレット</string>
   <!-- Scan Private key button label -->
   <string name="Import.scan">秘密鍵をスキャン</string>
   <!-- Import wallet success alert title -->
@@ -215,9 +215,9 @@
   <!-- Ignore jailbreak warning button -->
   <string name="JailbreakWarnings.ignore">無視する</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithBalance">端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのモナコインを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。</string>
+  <string name="JailbreakWarnings.messageWithBalance">端末がセキュリティの危険にさらされている可能性があります\n 「脱獄」アプリはパンのキーチェーンデータにアクセスし、あなたのモナコインを盗む恐れがあります!  直ちにこのウォレットを完全削除して、安全な端末で復元して下さい。</string>
   <!-- Jailbreak warning message -->
-  <string name="JailbreakWarnings.messageWithoutBalance">端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはブレッドのキーチェーンデータにアクセスし、あなたのモナコインを盗む恐れがあります!  ブレッドは必ず脱獄端末以外で利用してください。</string>
+  <string name="JailbreakWarnings.messageWithoutBalance">端末がセキュリティの危険にさらされている可能性があります\n「脱獄」アプリはパンのキーチェーンデータにアクセスし、あなたのモナコインを盗む恐れがあります!  パンは必ず脱獄端末以外で利用してください。</string>
   <!-- Jailbreak warning title -->
   <string name="JailbreakWarnings.title">警告</string>
   <!-- Wipe wallet button -->
@@ -225,7 +225,7 @@
   <!-- Location services disabled error -->
   <string name="LocationPlugin.disabled">位置情報サービスが無効化されています。</string>
   <!-- No permissions for location services -->
-  <string name="LocationPlugin.notAuthorized">ブレッドは位置情報サービスへのアクセスが許可されていません。</string>
+  <string name="LocationPlugin.notAuthorized">パンは位置情報サービスへのアクセスが許可されていません。</string>
   <!-- Wallet creation date prefix -->
   <string name="ManageWallet.creationDatePrefix">あなたは%1$sでご自身のウォレットを作成しました</string>
   <!-- Manage wallet description text -->
@@ -317,7 +317,7 @@
   <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
   <string name="Prompts.TouchId.usePin.android">PIN</string>
   <!-- Upgrade PIN prompt body. -->
-  <string name="Prompts.UpgradePin.body">ブレッドは6桁のPINコード使用にアップグレードされました。こちらをタップして更新してください。</string>
+  <string name="Prompts.UpgradePin.body">パンは6桁のPINコード使用にアップグレードされました。こちらをタップして更新してください。</string>
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">PINコードを更新する</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
@@ -353,7 +353,7 @@
   <!-- Enter paper key instruction -->
   <string name="RecoverWallet.instruction">紙の鍵を入力してください</string>
   <!-- Recover wallet intro -->
-  <string name="RecoverWallet.intro">紙の鍵を使用し、あなたのブレッドを復元する。</string>
+  <string name="RecoverWallet.intro">紙の鍵を使用し、あなたのパンを復元する。</string>
   <!-- Invalid paper key message -->
   <string name="RecoverWallet.invalid">あなたが入力した紙の鍵は無効です。各フレーズを再確認の上、もう一度お試しください。</string>
   <!-- Previous button accessibility label -->
@@ -411,7 +411,7 @@
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">ペーパーキー</string>
   <!-- PIN button description -->
-  <string name="SecurityCenter.pinDescription">アクセス権限のないユーザーからあなたのブレッドを守ります。</string>
+  <string name="SecurityCenter.pinDescription">アクセス権限のないユーザーからあなたのパンを守ります。</string>
   <!-- PIN button title -->
   <string name="SecurityCenter.pinTitle">6桁のPINコード</string>
   <!-- Security Center Title -->
@@ -427,13 +427,13 @@
   <!-- Balance: $4.00 -->
   <string name="Send.balance">残高: %1$s</string>
   <!-- Instructions how to allow the camera access for the app -->
-  <string name="Send.cameraUnavailabeMessage.android">「設定」 &gt; 「アプリ」 &gt; 「ブレッド」 &gt; 「許可」でカメラへのアクセスを許可してください</string>
+  <string name="Send.cameraUnavailabeMessage.android">「設定」 &gt; 「アプリ」 &gt; 「パン」 &gt; 「許可」でカメラへのアクセスを許可してください</string>
   <!-- Permission required to access camera -->
-  <string name="Send.cameraUnavailabeTitle.android">ブレッドはカメラへのアクセスを許可されていません</string>
+  <string name="Send.cameraUnavailabeTitle.android">パンはカメラへのアクセスを許可されていません</string>
   <!-- Camera not allowed message -->
   <string name="Send.cameraunavailableMessage">設定画面へ移動し、カメラへのアクセス許可をしてください。</string>
   <!-- Camera not allowed alert title -->
-  <string name="Send.cameraUnavailableTitle">ブレッドはカメラへのアクセスが許可されていません</string>
+  <string name="Send.cameraUnavailableTitle">パンはカメラへのアクセスが許可されていません</string>
   <!-- Warning when sending to self. -->
   <string name="Send.containsAddress">送金先がご自身のアドレスになっています。自分宛てには送金できません。</string>
   <!-- Could not create transaction alert title -->
@@ -489,7 +489,7 @@
   <!-- Join Early access label -->
   <string name="Settings.earlyAccess">早期アクセスに参加</string>
   <!-- Are you enjoying pan alert message body -->
-  <string name="Settings.enjoying">ブレッドをお楽しみいただいていますか?</string>
+  <string name="Settings.enjoying">パンをお楽しみいただいていますか?</string>
   <!-- Import wallet label -->
   <string name="Settings.importTitle">ウォレットをインポート</string>
   <!-- Manage settings section header -->
@@ -513,7 +513,7 @@
   <!-- Start or recover another wallet menu label. -->
   <string name="Settings.wipe">別のウォレットを作成、または復元する</string>
   <!-- Share data view body -->
-  <string name="ShareData.body">匿名データをシェアして、ブレッドの改善にご協力ください。これにはいかなる財務情報も含まれません。私たちはあなたの財務プライバシーを尊重しています。</string>
+  <string name="ShareData.body">匿名データをシェアして、パンの改善にご協力ください。これにはいかなる財務情報も含まれません。私たちはあなたの財務プライバシーを尊重しています。</string>
   <!-- Share data header -->
   <string name="ShareData.header">データをシェしますか?</string>
   <!-- Share data switch label. -->
@@ -521,7 +521,7 @@
   <!-- button label -->
   <string name="StartPaperPhrase.againButtonTitle">紙の鍵をもう一度書き留めてください</string>
   <!-- Paper key explanation text. -->
-  <string name="StartPaperPhrase.body">紙の鍵は、あなたが携帯電話を紛失したり、盗まれたり、壊れたり、アップグレードした場合に、ご自身のブレッドを復元できる唯一の方法です。\n\nフレーズの一覧を表示しますので、紙に書き留めて安全に保管してください。</string>
+  <string name="StartPaperPhrase.body">紙の鍵は、あなたが携帯電話を紛失したり、盗まれたり、壊れたり、アップグレードした場合に、ご自身のパンを復元できる唯一の方法です。\n\nフレーズの一覧を表示しますので、紙に書き留めて安全に保管してください。</string>
   <!-- button label -->
   <string name="StartPaperPhrase.buttonTitle">紙の鍵を書き留めてください</string>
   <!-- Argument is date -->
@@ -553,13 +553,13 @@
   <!-- Fingerprint Is Not Setup -->
   <string name="TouchIdSettings.disabledWarning.title.android">指紋認証が有効ではありません</string>
   <!-- Touch Id screen label -->
-  <string name="TouchIdSettings.label">設定された限度額以下の送金を行う場合には、指紋を使ってご自身のブレッドのロックを解除してください。</string>
+  <string name="TouchIdSettings.label">設定された限度額以下の送金を行う場合には、指紋を使ってご自身のパンのロックを解除してください。</string>
   <!-- Link Text (see TouchIdSettings.customizeText) -->
   <string name="TouchIdSettings.linkText">Touch ID利用限度額画面</string>
   <!-- Spending Limit: b100,000 ($100) -->
   <string name="TouchIdSettings.spendingLimit">利用限度: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
-  <string name="TouchIdSettings.switchLabel">ブレッドでTouch IDの有効化</string>
+  <string name="TouchIdSettings.switchLabel">パンでTouch IDの有効化</string>
   <!-- Enable fingerprint for this wallet called Pan -->
   <string name="TouchIdSettings.switchLabel.android">指紋認証を有効にする</string>
   <!-- Touch ID settings view title -->
@@ -655,7 +655,7 @@
   <!-- Instruction to touch the sensor for fingerprint authentication -->
   <string name="UnlockScreen.touchIdInstructions.android">タッチセンサー</string>
   <!-- TouchID prompt text -->
-  <string name="UnlockScreen.touchIdPrompt">ブレッドのロックを解除してください。</string>
+  <string name="UnlockScreen.touchIdPrompt">パンのロックを解除してください。</string>
   <!-- Device authentication body -->
   <string name="UnlockScreen.touchIdPrompt.android">続行するためAndroid機器のロックを解除 してください</string>
   <!-- Unlock with TouchID accessibility label -->
@@ -667,7 +667,7 @@
   <!-- Update PIN caption text -->
   <string name="UpdatePin.caption">このPINコードは覚えておいてください。忘れた場合、ご自身のモナコインへアクセスできなくなります。</string>
   <!-- PIN creation info. -->
-  <string name="UpdatePin.createInstruction">あなたのPINコードはご自身のブレッドのロックを解除したり、送金する時に利用します。</string>
+  <string name="UpdatePin.createInstruction">あなたのPINコードはご自身のパンのロックを解除したり、送金する時に利用します。</string>
   <!-- Update PIN title -->
   <string name="UpdatePin.createTitle">PINコードの設定</string>
   <!-- Update PIN title -->
