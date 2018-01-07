@@ -14,14 +14,14 @@
     <item name="dark_gray" type="color">#65696e</item>
     <item name="almost_black" type="color">#303030</item>
     <item name="dark_blue" type="color">#4C98FD</item>
-    <item name="notification_gradient_start" type="color">#63BCFF</item>
-    <item name="notification_gradient_end" type="color">#378DFD</item>
+    <item name="notification_gradient_start" type="color">#19B5FE</item>
+    <item name="notification_gradient_end" type="color">#22A7F0</item>
     <item name="wallet_orange" type="color">#ff8000</item>
     <item name="white_trans" type="color">#32ffffff</item>
     <item name="black_trans" type="color">#b5000000</item>
     <item name="red_text" type="color">#FF5454</item>
     <item name="green_text" type="color">#00BF00</item>
-    <item name="pink" type="color">#68ffc0c1</item>
+    <item name="pink" type="color">#F06292</item>
     <item name="status_bar" type="color">#000000</item>
     <item name="intro_status_bar" type="color">#ffbf7f</item>
     <item name="warning_status_bar" type="color">#7f5225</item>
@@ -30,8 +30,8 @@
     <item name="logo_gradient_start" type="color">#E95262</item>
     <item name="logo_gradient_end" type="color">#E5384A</item>
 
-    <item name="finger_gradient_start" type="color">#9c7ee2</item>
-    <item name="finger_gradient_end" type="color">#7F52E6</item>
+    <item name="finger_gradient_start" type="color">#9B59B6</item>
+    <item name="finger_gradient_end" type="color">#8E44AD</item>
 
     <item name="recover_gradient_start" type="color">#e5affc</item>
     <item name="recover_gradient_end" type="color">#d17df5</item>

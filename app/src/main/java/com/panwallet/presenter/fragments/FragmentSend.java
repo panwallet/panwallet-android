@@ -768,7 +768,7 @@ public class FragmentSend extends Fragment {
     }
 
     private boolean isInputValid(String input) {
-        return input.matches("^[@a-zA-Z0-9][_a-zA-Z0-9]*");
+        return input.matches("^[@_a-zA-Z0-9][_a-zA-Z0-9]*");
     }
 
     // from the link above

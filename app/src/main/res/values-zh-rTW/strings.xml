@@ -88,7 +88,7 @@
   <string name="BCH.txHashHeader">BCH 交易 ID</string>
   <!-- Approve button label -->
   <string name="BitID.approve">許可</string>
-  <!-- <sitename> is requesting authentication using your bitcoin wallet -->
+  <!-- <sitename> is requesting authentication using your monacoin wallet -->
   <string name="BitID.authenticationRequest">%1$s 要求認證使用您的monacoin錢包</string>
   <!-- Deny button label -->
   <string name="BitID.deny">拒絕</string>
@@ -140,7 +140,7 @@
   <string name="ConfirmPaperPhrase.label">要確保每項資料都正確寫下，請從紙上金鑰輸入下列字組。</string>
   <!-- Word label eg. Word #1, Word #2 -->
   <string name="ConfirmPaperPhrase.word">字組 #%1$s</string>
-  <!-- Bitcoin denomination picker label -->
+  <!-- Monacoin denomination picker label -->
   <string name="DefaultCurrency.bitcoinLabel">monacoin顯示單位</string>
   <!-- Exchange rate label -->
   <string name="DefaultCurrency.rateLabel">匯率</string>
@@ -234,7 +234,7 @@
   <string name="ManageWallet.textFeildLabel">電子錢包名稱</string>
   <!-- Manage wallet modal title -->
   <string name="ManageWallet.title">管理電子錢包</string>
-  <!-- Buy bitcoin title -->
+  <!-- Buy monacoin title -->
   <string name="MenuButton.buy">購買monacoin</string>
   <!-- Menu button title -->
   <string name="MenuButton.lock">鎖定電子錢包</string>
@@ -370,7 +370,7 @@
   <string name="RecoverWallet.subheader_reset_pin">為重設 PIN 碼，請在下方空格內輸入您的紙本金鑰上的字串。</string>
   <!-- No amount entered error message. -->
   <string name="RequestAnAmount.noAmount">請先輸入一個帳戶</string>
-  <!-- Request a specific amount of bitcoin -->
+  <!-- Request a specific amount of monacoin -->
   <string name="RequestAnAmount.title">要求帳戶</string>
   <!-- Alert action button label -->
   <string name="ReScan.alertAction">同步</string>
@@ -394,7 +394,7 @@
   <string name="ReScan.subheader1">預估時間</string>
   <!-- Subheader label -->
   <string name="ReScan.subheader2">什麼時候該進行同步？</string>
-  <!-- Scan bitcoin address camera flash toggle -->
+  <!-- Scan monacoin address camera flash toggle -->
   <string name="Scanner.flashButtonLabel">相機閃光</string>
   <!-- Complete filter label -->
   <string name="Search.complete">完成</string>
