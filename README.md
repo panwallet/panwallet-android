@@ -1,4 +1,4 @@
-![ƀ](/images/icon.png) Pan Wallet for Android
+![ƀ](/images/icon.png) Pan for Android
 ----------------------------------
 
 [![download](/images/icon-google-play.png)] (https://play.google.com)
@@ -9,27 +9,25 @@ This is the Monacoin port of the breadwallet Android app, which can be found [he
 
 #####a completely standalone monacoin wallet:
 
-Unlike many other monacoin wallets, Pan Wallet is a real standalone monacoin
+Unlike many other monacoin wallets, Pan is a real standalone monacoin
 client. There is no server to get hacked or go down, so you can always access
 your money. Using
 [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients)
-mode, Pan Wallet connects directly to the monacoin network with the fast
+mode, Pan connects directly to the monacoin network with the fast
 performance you need on a mobile device.
 
 #####the next step in wallet security:
 
-Pan Wallet is designed to protect you from malware, browser security holes,
-*even physical theft*. With AES hardware encryption, app sandboxing, and verified boot, Pan Wallet represents a significant security advance over
-web and desktop wallets.
+Pan is designed to protect you from malware, browser security holes, *even physical theft*. 
+With AES hardware encryption, app sandboxing, and verified boot, Pan represents a significant 
+security advance over web and desktop wallets.
 
 #####beautiful simplicity:
 
-Simplicity is Pan Wallet's core design principle. A simple backup phrase is
-all you need to restore your wallet on another device if yours is ever lost or
-broken.  Because Pan Wallet is  
-[deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki),
-your balance and transaction history can be recovered from just your backup
-phrase.
+Simplicity is Pan's core design principle. A simple backup phrase is
+all you need to restore your wallet on another device if yours is ever lost or broken.
+Because Pan is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki),
+your balance and transaction history can be recovered from just your backup phrase.
 
 ###features:
 
