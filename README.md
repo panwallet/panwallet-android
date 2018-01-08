@@ -5,7 +5,7 @@
 
 ###monacoin done right
 
-This is the Monacoin port of the breadwallet Android app, which can be found [here](https://github.com/breadwallet/breadwallet-android).
+This is the monacoin port of the breadwallet Android app, which can be found [here](https://github.com/breadwallet/breadwallet-android).
 
 #####a completely standalone monacoin wallet:
 
