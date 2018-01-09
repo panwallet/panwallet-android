@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.panwallet.R;
 import com.panwallet.presenter.activities.intro.IntroActivity;
+import com.panwallet.presenter.activities.settings.SyncBlockchainActivity;
 import com.panwallet.presenter.activities.util.ActivityUTILS;
 import com.panwallet.presenter.activities.util.BRActivity;
 import com.panwallet.presenter.customviews.BRDialogView;
@@ -23,7 +24,9 @@ import com.panwallet.tools.manager.BRSharedPrefs;
 import com.panwallet.tools.security.AuthManager;
 import com.panwallet.tools.security.PostAuth;
 import com.panwallet.tools.security.SmartValidator;
+import com.panwallet.tools.threads.BRExecutor;
 import com.panwallet.tools.util.Utils;
+import com.panwallet.wallet.BRPeerManager;
 import com.panwallet.wallet.BRWalletManager;
 
 public class InputWordsActivity extends BRActivity {

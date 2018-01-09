@@ -33,8 +33,8 @@
     <item name="finger_gradient_start" type="color">#9B59B6</item>
     <item name="finger_gradient_end" type="color">#8E44AD</item>
 
-    <item name="recover_gradient_start" type="color">#e5affc</item>
-    <item name="recover_gradient_end" type="color">#d17df5</item>
+    <item name="recover_gradient_start" type="color">#BE90D4</item>
+    <item name="recover_gradient_end" type="color">#9B59B6</item>
 
     <item name="restore_gradient_start" type="color">#fabe7a</item>
     <item name="restore_gradient_end" type="color">#F8A445</item>
