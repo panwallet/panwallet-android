@@ -1,7 +1,7 @@
 ![ƀ](/images/icon.png) Pan for Android
 ----------------------------------
 
-[![download](/images/icon-google-play.png)] (https://play.google.com)
+[![download](/images/icon-google-play.png)] (https://play.google.com/store/apps/details?id=com.panwallet)
 
 ###monacoin done right
 
