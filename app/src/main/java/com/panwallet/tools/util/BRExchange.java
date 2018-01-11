@@ -44,7 +44,7 @@ public class BRExchange {
         if (iso.equalsIgnoreCase("MONA"))
             return getBitcoinForSatoshis(context, new BigDecimal(MAX_BTC * 100000000));
         CurrencyEntity ent = CurrencyDataSource.getInstance(context).getCurrencyByIso(iso);
-        if (ent == null) throw new RuntimeException("no currency in DB for: " + iso);
+        if (ent == null) return null; // throw new RuntimeException("no currency in DB for: " + iso);
         return new BigDecimal(ent.rate * MAX_BTC);
     }
 

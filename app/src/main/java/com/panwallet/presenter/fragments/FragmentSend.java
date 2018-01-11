@@ -629,6 +629,11 @@ public class FragmentSend extends Fragment {
     private void handleDigitClick(Integer dig) {
         String currAmount = amountBuilder.toString();
         String iso = selectedIso;
+        BigDecimal maxAmount = BRExchange.getMaxAmount(getActivity(), iso);
+        if (maxAmount == null) {
+            selectedIso = iso = "MONA";
+            updateText();
+        }
         if (new BigDecimal(currAmount.concat(String.valueOf(dig))).doubleValue()
                 <= BRExchange.getMaxAmount(getActivity(), iso).doubleValue()) {
             //do not insert 0 if the balance is 0 now
