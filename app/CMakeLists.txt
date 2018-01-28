@@ -60,6 +60,26 @@ add_library( # Specifies the name of the library.
              src/main/jni/panwallet-core/BRTransaction.h
              src/main/jni/panwallet-core/BRWallet.c
              src/main/jni/panwallet-core/BRWallet.h
+             src/main/jni/panwallet-core/Lyra2RE/blake.c
+             src/main/jni/panwallet-core/Lyra2RE/bmw.c
+             src/main/jni/panwallet-core/Lyra2RE/cubehash.c
+             src/main/jni/panwallet-core/Lyra2RE/groestl.c
+             src/main/jni/panwallet-core/Lyra2RE/keccak.c
+             src/main/jni/panwallet-core/Lyra2RE/Lyra2.c
+             src/main/jni/panwallet-core/Lyra2RE/Lyra2.h
+             src/main/jni/panwallet-core/Lyra2RE/Lyra2RE.c
+             src/main/jni/panwallet-core/Lyra2RE/Lyra2RE.h
+             src/main/jni/panwallet-core/Lyra2RE/skein.c
+             src/main/jni/panwallet-core/Lyra2RE/sph_blake.h
+             src/main/jni/panwallet-core/Lyra2RE/sph_bmw.h
+             src/main/jni/panwallet-core/Lyra2RE/sph_cubehash.h
+             src/main/jni/panwallet-core/Lyra2RE/sph_groestl.h
+             src/main/jni/panwallet-core/Lyra2RE/sph_keccak.h
+             src/main/jni/panwallet-core/Lyra2RE/sph_skein.h
+             src/main/jni/panwallet-core/Lyra2RE/sph_types.h
+             src/main/jni/panwallet-core/Lyra2RE/Sponge.c
+             src/main/jni/panwallet-core/Lyra2RE/Sponge.h
+
 
              src/main/jni/transition/core.c
              src/main/jni/transition/core.h
