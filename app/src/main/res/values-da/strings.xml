@@ -417,7 +417,7 @@
   <!-- Security Center Title -->
   <string name="SecurityCenter.title">Sikkerhedscenter</string>
   <!-- Touch ID button description -->
-  <string name="SecurityCenter.touchIdDescription">Lås dit Break op og send penge op til en vis grænse.</string>
+  <string name="SecurityCenter.touchIdDescription">Lås dit Pan op og send penge op til en vis grænse.</string>
   <!-- Touch ID button title -->
   <string name="SecurityCenter.touchIdTitle">Touch ID</string>
   <!-- Security center fingerprint authentication button -->
