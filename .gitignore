@@ -34,6 +34,7 @@ proguard/
 # Android Studio
 *.iml
 *.keystore
+*.jks
 gradle.properties
 */local.properties
 */out
